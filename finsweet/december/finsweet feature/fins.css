@@ -1,0 +1,256 @@
+/* ================================
+        common css start
+================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ ul, ol{
+    list-style: none;
+ } 
+ a{
+    text-decoration: none;
+    display: inline-block;
+ }
+ img {
+    vertical-align: middle;
+ }
+ h1, h2, h3,h4,h5,h6,p,li,a,div,span,ul {
+    margin: 0;
+    padding: 0;
+ }
+.container {
+    width: 1278px;
+    margin: auto;
+}
+ /* ================================
+        common css END
+================================*/
+
+ /* ================================
+        NAVBAR START
+================================*/
+
+#navbar_part{
+   background-color: #1C1E53;
+   padding: 16px 0;
+}
+.main_menu {
+   display: flex;
+   align-items: center;
+}
+.menu_items ul {
+   display: flex;
+   padding-left: 452px;
+   column-gap: 32px;   
+}
+.main_menu .menu_items ul li a {
+   color: #BBBBCB;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+}
+.main_menu .menu_items ul:nth-child(3) {
+   color: #fff; 
+}
+.main_menu .btm1 {
+   width: 185px;
+   height: 60px;
+   border: 2px solid rgba(244, 246, 252, 0.2);
+   border-radius: 41px;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 32px;
+}
+.main_menu .btm1 span {
+   font-family: 'Poppins', sans-serif;
+}
+
+ /* ================================
+        NAVBAR end
+================================*/
+
+ /* ================================
+        hero START
+================================*/
+  /* ================================
+        hero START
+================================*/
+#heroSection {
+   background-color: #1C1E53;
+   padding: 128px 0;
+}
+#heroSection .container {
+   display: flex;
+   width: 1278px;
+   margin: auto;
+}
+.left {
+   color: #fff;
+   margin-right: 60px ;
+}
+.left h1 {
+   font-family: Poppins;
+   font-size: 54px;
+   font-weight: 600;
+}
+.left p {
+   font-size: 16px;
+   font-weight: 500;
+   padding: 32px 0;
+   opacity: 0.7;
+}
+.left .btm {
+   display: inline-flex;
+   height: 64px;
+   padding: 16px 48px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   background:  #FCD980;
+   border-radius: 41px;
+   color:  #282938;
+   font-family: 'Manrope', sans-serif;
+   font-size: 18px;
+   font-weight: 600;
+}
+ /* ================================
+        hero end
+================================*/
+ /* ================================
+        logo section start
+================================*/
+
+#logo_section {
+   margin-top: 96px;
+}
+#logo_section .container {
+   display: flex;
+   width: 1278px;
+   margin: auto;
+}
+#logo_section .logo_num{
+   padding-right: 90px;
+}
+#logo_section .logo_num p{
+   color: #282938;
+   font-family: Poppins;
+   font-size: 38px;
+   font-weight: 600;
+}
+#logo_section .logo_num span{
+   color: var(--Dark-blue, #282938);
+   font-family: Poppins;
+   font-size: 16px;;
+   font-weight: 400;
+} 
+/* ================================
+        logo section end
+================================*/
+/* ================================
+        benefits start
+================================*/
+#benefits {
+   padding-top: 96px;
+}
+#benefits .container .heading{
+   color: #282938;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   font-size: 48px;
+   font-weight: 600;
+   padding-bottom: 48px;
+}
+#benefits .container .box{
+   display: flex;
+}
+
+
+#benefits .container .box1{
+   background: #F4F6FC;
+   width: 405px;
+   height: 316px;
+   margin-right: 32px;
+   padding: 50px 32px 48px 48px;
+}
+#benefits .container .box1 h4{
+   color: #282938;
+   font-size: 24px;
+   font-weight: 500;
+   padding: 26px 0 12px;
+}
+#benefits .container .box1 p{
+   color:  #282938;
+   font-size: 16px;
+   font-weight: 400;
+   opacity: 0.7;
+}
+
+/* ================================
+        benefits end
+================================*/
+/* ================================
+        best class start
+================================*/
+#best_class {
+   padding: 128px;
+}
+#best_class .container{
+   display: flex;
+}
+#best_class .container .left {
+   padding-right: 83px;
+
+}
+#best_class .container .left p{
+   color: #000;
+   font-size: 18px;;
+   font-weight: 500;
+   opacity: 0.87;
+}
+#best_class .container .left h3{
+   color: #232536;
+   font-size: 38px;
+   font-weight: 600;
+   padding: 16px 0;
+}
+#best_class .container .left span{
+   color: #282938;
+   font-size: 16px;
+   font-weight: 400;
+   opacity: 0.6;
+}
+
+/* ================================
+        best class end
+================================*/
+#best_class .container .right {
+   padding-right: 83px;
+
+}
+#best_class .container .right p{
+   color: #000;
+   font-size: 18px;;
+   font-weight: 500;
+   opacity: 0.87;
+}
+#best_class .container .right h3{
+   color: #232536;
+   font-size: 38px;
+   font-weight: 600;
+   padding: 16px 0;
+}
+#best_class .container .right span{
+   color: #282938;
+   font-size: 16px;
+   font-weight: 400;
+   opacity: 0.6;
+}
