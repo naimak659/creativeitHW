@@ -64,6 +64,7 @@ body{
 #navbar{
     display: flex;
     align-items: center;
+    padding-top: 25px;
 }
 .nav__logo{
     position: relative;
@@ -236,7 +237,7 @@ body{
     top: -400px;
     left: -7px;
 }
-.about__right h5{
+.about__right__title{
     color: #FFF;
     font-family: var(--Oswald);
     font-size: 27px;
@@ -269,7 +270,12 @@ body{
     color: var(--primary_white);
     margin-top: 30px;
 }
-
+.about__bottom{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
 .about__box{
     width: 315px;
     height: 170px;
@@ -278,22 +284,14 @@ body{
     padding: 25px 80px 27px 100px;
 }
 
-.about__box p{
-    color: var(--primary_white);
-    font-family: var(--Oswald);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: 0.36px;
-    padding-top: 30px;
-}
+
 .box__title{
     display: flex;
-    position: relative;
+    /* position: relative; */
+    align-items: end;
 
 }
-.box__title h2{
+.box__title__text{
     color: var(--primary_white);
     font-family: var(--Barlow);
     font-size: 60px;
@@ -303,13 +301,24 @@ body{
     letter-spacing: 1.8px;
 }
 .fa-circle{
-    position: absolute;
+    /* position: absolute;
+    bottom: 17px;
+    right: 17px; */
     width: 12px;
     height: 12px;
-    bottom: 17px;
-    right: 17px;
     color: var(--red);
 }
+
+.box__summary{
+    color: var(--primary_white);
+    font-family: var(--Oswald);
+    font-size: 18px;
+    font-weight: 300;;
+    max-width: 125px;
+    /* padding-top: 30px; */
+}
+
+
 
 
 
