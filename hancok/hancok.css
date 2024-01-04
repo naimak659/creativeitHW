@@ -286,13 +286,17 @@ body{
 
 
 .box__title{
-    display: flex;
-    /* position: relative; */
-    align-items: end;
+    /* display: flex;
+    position: relative;
+    align-items: end;  */
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 8px;
 
 }
 .box__title__text{
-    color: var(--primary_white);
+    color: #FFF;
     font-family: var(--Barlow);
     font-size: 60px;
     font-style: normal;
