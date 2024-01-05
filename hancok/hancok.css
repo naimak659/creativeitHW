@@ -41,8 +41,9 @@ body{
 :root{
     --primary_white: #fff;
     --red: #FF4655;
-    --background__deep: #191919;
-    --background: #121212;
+    --background: #191919;
+    --background__deep: #121212;
+    --text__white: #DDD;
     --Oswald:'Oswald', sans-serif;
     --Barlow:'Barlow Condensed', sans-serif;
 }
@@ -83,11 +84,11 @@ body{
 }
 .nav__menu{
     display: flex;
-    padding-left: 70px;
+    padding-left: 100px;
     column-gap: 30px;
 }
 .nav__menu li{
-    color: #DDD;
+    color: var(--text__white);
     font-family: var(--Oswald);
     font-size: 16px;
     font-weight: 400;
@@ -95,7 +96,7 @@ body{
 .nav__icons{
     display: flex;
     column-gap: 27px;
-    padding-left: 362px;
+    padding-left: 460px;
     
 }
 .nav__icons a{
@@ -173,7 +174,7 @@ body{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #DDD;
+    background-color: var(--text__white);
     color: var(--background);
     margin-top: 301px;
 }
@@ -188,7 +189,7 @@ body{
     height: 912px;
     padding-top: 34px;
 }
-.aboutPart__title{
+.common__title{
     color: var(--primary_white);
     font-family: var(--Oswald);
     font-size: 38px;
@@ -199,7 +200,7 @@ body{
     max-width: 518px;
     position: relative;
 }
-.aboutPart__title::after{
+.aboutPart--line::after{
     width: 120px;
     height: 3px;
     content: "";
@@ -238,7 +239,7 @@ body{
     left: -7px;
 }
 .about__right__title{
-    color: #FFF;
+    color: var(--primary_white);
     font-family: var(--Oswald);
     font-size: 27px;
     font-style: normal;
@@ -296,7 +297,7 @@ body{
 
 }
 .box__title__text{
-    color: #FFF;
+    color: var(--primary_white);
     font-family: var(--Barlow);
     font-size: 60px;
     font-style: normal;
@@ -328,3 +329,115 @@ body{
 
 
 /* ================================about end================================*/
+
+
+
+/* ================================game start================================*/
+#gamePart{
+    background-color: var(--background);
+    padding: 115px 0 115px;
+}
+.game__top{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.game__top__title{
+    color: var(--primary_white);
+    text-align: right;
+    font-family: var(--Barlow);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.66px;
+    max-width: 454px;
+}
+.game__top__title::before{
+    position: absolute;
+    content: "";
+    width: 105px;
+    height: 3px;
+    background-color: var(--red);
+    bottom: 9%;
+    right: 14%;
+}
+
+
+.game__bottom{
+    display: flex;
+    column-gap: 108px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 80px;
+}
+
+.game__bottom__left{
+    position: relative;
+}
+
+.game__left__img{
+    position: absolute;
+    top: -497px;
+    left: -39px;
+    z-index: 1;
+}
+.game__overlay{
+    position: relative;
+}
+
+.game__overlay::after{
+    position: absolute;
+    content: "";
+    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+    background-color: var(--red);
+    width: 651px;
+    height: 390px;
+    top: -389px;
+    left: -94px;
+
+}
+
+.game__bottom__right{
+    position: relative;
+}
+.game__right__icon{
+    position: absolute;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    bottom: 5%;
+    right: 2%;
+    color: var(--primary_white);
+}
+.fa-circle-chevron-right{
+    
+}
+
+
+/* ================================game end================================*/
+
+
+
+/* ================================streamin Star================================*/
+
+#streaminPart{
+    background-color: var(--background__deep);
+    padding: 90px 0;
+}
+
+.streaminPart--line::after{
+    width: 120px;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: var(--red);
+    bottom: 9%;
+    right: 48%;
+}
+
+/* ================================streamin end================================*/
+/* ================================streamin end================================*/
+
+
