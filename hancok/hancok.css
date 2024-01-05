@@ -420,8 +420,8 @@ body{
 /* ================================streamin Star================================*/
 
 #streaminPart{
-    background-color: var(--background__deep);
-    padding: 90px 0;
+    background: var(--background__deep);
+    padding: 150px 0;
 }
 
 .streaminPart--line::after{
@@ -433,6 +433,88 @@ body{
     bottom: 9%;
     right: 48%;
 }
+.streamin__videos{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.video{
+    position: relative;
+
+}
+.video--width{
+    width: 427px;
+    height: 276px;
+}
+.video--width2xl{
+    width: 427px;
+    height: 295px;
+}
+.video__pic{
+    filter: grayscale(1);
+}
+.grayscale--none{
+    filter: grayscale(0) !important;
+}
+.video__playIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+.videoContent{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    column-gap: 160px;
+    padding: 0 25px;
+    position: absolute;
+    bottom: 24px;
+    left: 0px;
+}
+.videoContent__title{
+    color: var(--primary_white);
+    font-family: var(--Barlow);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+}
+.videoContent__summary{
+    color: var(--primary_white);
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.96px;
+}
+.videoContent__right{
+    color: var(--primary_white);
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+}
+.videoContent__right::before{
+    position: absolute;
+    content: "";
+    bottom: 8px;
+    left: -8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--red);
+}
+
+
+/* #streaminPart{
+    background-color: var(--background__deep);
+    padding: 90px 0;
+}
+
+
 .streamin__videos{
     padding-top: 80px;
     display: flex;
@@ -467,7 +549,7 @@ body{
     column-gap: 185px;
     padding: 196px 0 24px 25px;
     /* padding-top: 196px;
-    padding-left: 25px; */
+    padding-left: 25px; 
 }
 .videoContent__title{
     color: var(--primary_white);
@@ -507,7 +589,7 @@ body{
     top: 60%;
     left: -10px;
     background-color: var(--red);
-}
+} */
 /* ================================streamin end================================*/
 
 
