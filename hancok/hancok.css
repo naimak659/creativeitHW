@@ -411,9 +411,6 @@ body{
     right: 2%;
     color: var(--primary_white);
 }
-.fa-circle-chevron-right{
-    
-}
 
 
 /* ================================game end================================*/
@@ -436,8 +433,84 @@ body{
     bottom: 9%;
     right: 48%;
 }
+.streamin__videos{
+    padding-top: 80px;
+    display: flex;
+    column-gap: 20px;
+}
+.video{
+    position: relative;
+    width: 427px;
+    height: 273px;
 
+}
+.video__img{
+    width: 427px;
+    height: 273px;
+    background: url(./images/tour-1\ 1.png);
+    filter: grayscale(100%);
+    position: relative;
+}
+
+
+.video__playIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.video__content{
+    display: flex;
+    align-items: flex-end;
+    column-gap: 185px;
+    padding: 196px 0 24px 25px;
+    /* padding-top: 196px;
+    padding-left: 25px; */
+}
+.videoContent__title{
+    color: var(--primary_white);
+    font-family: var(--Barlow);
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 167px;
+}
+.videoContent__summary{
+    color: var(--primary_white);
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.96px;
+}
+.video__content__right{
+    position: absolute;
+    bottom: 10%;
+    right:25px;
+}
+.videoContent__rightP{
+    color: var(--primary_white);
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+}
+.videoContent__rightP::before{
+    width: 5px;
+    height: 5px;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: -10px;
+    background-color: var(--red);
+}
 /* ================================streamin end================================*/
-/* ================================streamin end================================*/
+
+
+/* ================================ end================================*/
 
 
