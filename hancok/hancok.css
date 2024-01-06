@@ -507,9 +507,20 @@ body{
     border-radius: 50%;
     background-color: var(--red);
 }
+.gap--253{
+    column-gap: 253px !important;
+}
+
+
+
+
+
+
+
 
 
 /* #streaminPart{
+
     background-color: var(--background__deep);
     padding: 90px 0;
 }
@@ -590,6 +601,10 @@ body{
     left: -10px;
     background-color: var(--red);
 } */
+
+
+
+
 /* ================================streamin end================================*/
 
 
