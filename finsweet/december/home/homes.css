@@ -44,6 +44,7 @@
     --blue: #2405F2;
     --text: #BBBBCB;
     --backgroundC: #1C1E53;
+    --secondary_bg: #F4F6FC;
     --backgroundtext: #282938;
     --popins: 'Poppins', sans-serif;
     --manrope: 'Manrope', sans-serif;
@@ -186,6 +187,108 @@
   /* ================================
          hero end
  ================================*/
+  /* ================================
+         work START
+ ================================*/
+
+#workPart{
+   background: #F4F6FC;
+   padding: 128px 0;
+}
+.work{
+   display: flex;
+}
+.wText{
+   width: 405px;
+   margin-right: 142px;
+}
+.wText__title{
+   color: var(--backgroundtext, #282938);
+   font-family: var(--popins);
+   font-size: 48px;
+   font-weight: 600;
+   line-height: 64px; /* 133.333% */
+}
+.wText__lorem{
+   color: var(--backgroundtext);
+   font-family: var(--popins);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 28px;
+   opacity: 0.7;
+   padding: 16px 0;
+}
+.wText__link{
+   color: var(--blue);
+   font-family: var(--popins);
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+}
+.work__boxes{
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 40px;
+   column-gap: 25px;
+   width: 656px;
+}
+.work__box{
+   width: 303px;
+}
+
+.box__icon{
+   position: relative;
+   width: 50px;
+   height: 50px;
+}
+.box__num{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: var(--white, #FFF);
+   font-family: var(--popins);
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+}
+.box__title{
+   color: var(--backgroundtext, #282938);
+   font-family: var(--popins);
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 48px; /* 150% */
+   padding: 16px 0 8px 0;
+}
+.wBox__lorem{
+   color: var(--backgroundtext, #282938);
+   font-family: var(--popins);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 28px; /* 175% */
+   opacity: 0.7;
+}
+
+
+
+
+
+  /* ================================
+         work end
+ ================================*/
+
+
+
+
+
+
+
+
+
+
   /* ================================
          projects      start
  ================================*/
@@ -384,6 +487,88 @@
   /* ================================
          features       end
  ================================*/
+
+
+
+  /* ================================
+         testimonial      start
+ ================================*/
+
+#testimonials{
+   background-color: #F9FAFD;
+   /* opacity: 0.5; */
+   padding: 130px 0;
+}
+.testimonial{
+   display: flex;
+   gap: 110px;
+}
+.testimonial__left{
+   width: 327px;
+}
+.tLeft__title{
+   color: var(--backgroundtext, #282938);
+   font-family: var(--popins);
+   font-size: 38px;
+   font-style: normal;
+   font-weight: 600;
+   margin-bottom: 16px;
+}
+.tLeft__lorem{
+   color: var(--backgroundtext, #282938);
+   font-family: var(--popins);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 28px;
+   opacity: 0.7;
+}
+.testimonial__right{
+   width: 843px;
+}
+.tRight__title{
+   color: var(--backgroundtext, #282938);
+   font-family: var(--popins);
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 48px;
+}
+.tRight__profile{
+   display: flex;
+   gap: 12px;
+   padding-top: 40px;
+}
+.profile__img{
+   border-radius: 50%;
+}
+.profile__name{
+   color: var(--backgroundtext, #282938);
+   font-family: var(--popins);
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+}
+.profile__position{
+   color: var(--Dark-blue, #282938);
+   font-family: var(--popins);
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 28px;
+}
+
+
+
+
+
+  /* ================================
+         testimonial      end
+ ================================*/
+
+
+
+
   /* ================================
          Faq      Start
  ================================*/
@@ -568,7 +753,7 @@ padding-bottom: 16px;
          blog end
  ================================*/
 #blogPart{
-   margin-top: 64px;
+   margin: 64px 0 128px 0;
 }
 .blog__title{
    color: var(--Dark-blue, #282938);
@@ -622,4 +807,60 @@ padding-bottom: 16px;
  
   /* ================================
          blog  end
+ ================================*/
+
+
+
+
+
+  /* ================================
+         Footer  start
+ ================================*/
+
+#footer{
+   background: var(--backgroundC, #1C1E53);
+   padding-top: 100px;
+}
+.footer{
+   display: flex;
+}
+.fLeft__top{
+   width: 399px;
+}
+.fLeft__top__summary{
+   color: var(--White, #FFF);
+   font-family: var(--popins);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 28px;
+   opacity: 0.8;
+   padding: 22px 0 89px 0;
+}
+.fLeft__bottom{
+   width: 517px;
+   height: 95px;
+   display: flex;
+   gap: 32px;
+   background: var(--buttonC);
+   padding: 18px 137px 16px 32px;
+}
+.bottomTitle{
+   color: var(--backgroundtext, #282938);
+   font-family: var(--popins);
+   font-size: 18px;
+   font-weight: 500;
+}
+.bottomAddress{
+   color: var(--backgroundtext, #282938);
+   font-family: var(--popins);
+   font-size: 16px;
+   font-weight: 400;
+   opacity: 0.8;
+}
+
+
+ 
+  /* ================================
+         Footer  end
  ================================*/
