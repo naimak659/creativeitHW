@@ -30,7 +30,7 @@ body{
 }
 .container {
     width: 1320px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* ================================common css END================================*/
