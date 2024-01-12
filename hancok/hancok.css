@@ -42,6 +42,7 @@ body{
     --background: #191919;
     --background__deep: #121212;
     --text__white: #DDD;
+    --text__gray: #666;
     --Oswald:'Oswald', sans-serif;
     --Barlow:'Barlow Condensed', sans-serif;
 }
@@ -230,8 +231,10 @@ body{
     font-weight: 600;
     line-height: normal;
     letter-spacing: 2.66px;
-    max-width: 518px;
     position: relative;
+}
+.aboutPart--line{
+    max-width: 518px;
 }
 .aboutPart--line::after{
     width: 120px;
@@ -241,6 +244,7 @@ body{
     background-color: var(--red);
     bottom: 11px;
     right: 185px;
+
 }
 .about__top{
     display: flex;
@@ -373,12 +377,12 @@ body{
     background-color: var(--background);
     padding: 115px 0 115px;
 }
-.game__top{
+.gameTop{
     display: flex;
     justify-content: flex-end;
     position: relative;
 }
-.game__top__title{
+.commonLeft__title{
     color: var(--primary_white);
     text-align: right;
     font-family: var(--Barlow);
@@ -387,9 +391,12 @@ body{
     font-weight: 600;
     line-height: normal;
     letter-spacing: 2.66px;
+    
+}
+.gameTitle--line{
     max-width: 454px;
 }
-.game__top__title::before{
+.gameTitle--line::before{
     position: absolute;
     content: "";
     width: 105px;
@@ -397,6 +404,7 @@ body{
     background-color: var(--red);
     bottom: 9%;
     right: 14%;
+    
 }
 
 
@@ -447,17 +455,17 @@ body{
     right: 2%;
     color: var(--primary_white);
 }
-.fa-circle-chevron-right{
+.gameRight__rightIcon{
     transition: all ease-in-out .4s;
 }
-.fa-circle-chevron-right:hover{
+.gameRight__rightIcon:hover{
     color: var(--red);
     transform: scale(1.1);
 }
-.fa-circle-chevron-left{
+.gameRight__leftIcon{
     transition: all ease-in-out .4s;
 }
-.fa-circle-chevron-left:hover{
+.gameRight__leftIcon:hover{
     color: var(--red);
     transform: scale(1.1);
 }
@@ -472,7 +480,9 @@ body{
     background: var(--background__deep);
     padding: 150px 0;
 }
-
+.streaminPart--line{
+    width: 454px;
+}
 .streaminPart--line::after{
     width: 120px;
     height: 3px;
@@ -480,7 +490,8 @@ body{
     position: absolute;
     background-color: var(--red);
     bottom: 9%;
-    right: 48%;
+    right: 41%;
+    
 }
 .streamin__videos{
     padding-top: 80px;
@@ -738,6 +749,451 @@ body{
 /* ================================streamin end================================*/
 
 
-/* ================================ end================================*/
+/* ================================Black Friday Sale Start================================*/
+
+#salePart{
+    padding: 90px 0;
+    background-color: var(--background);
+}
+.saleTitle--line{
+    max-width: 454px;
+}
+.saleTitle--line::before{
+    position: absolute;
+    content: "";
+    width: 105px;
+    height: 3px;
+    background-color: var(--red);
+    bottom: 9%;
+    right: 6%;
+}
+.saleGames{
+    display: flex;
+    gap: 20px;
+    padding-top: 47px;
+}
+.saleGame{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all ease-in .2s;
+}
+.saleGame:hover{
+    transform: scale(1.05);
+}
+.saleGame:hover .saleGame__overlay{
+    border: 2px solid var(--red);
+}
+.saleGame:hover .saleGame__playIcon{
+    visibility: visible;
+}
+.saleGame__overlay{
+    position: relative;
+    width: 315px;
+    height: 430px;
+}
+.saleGame__playIcon{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: var(--primary_white);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--text__gray);
+    transition: all ease-in .2s;
+    visibility: hidden;
+}
+.saleGame__icon{
+    text-align: center;
+}
+.saleGame__title{
+    color: var(--primary_white);
+    font-family: var(--Barlow);
+    font-size: 22px;
+    font-weight: 600;;
+}
+.saleGame__summery{
+    color: var(--text__gray);
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+}
+.saleGame__discount{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.saleGame__discountP{
+    color: var(--primary_white);
+    text-align: center;
+    font-family: var(--Oswald);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    background: var(--red);
+    padding: 4px 3px;
+
+}
+.saleGame__priceOld{
+    text-decoration: line-through;
+    color: var(--text__gray);
+    text-align: center;
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.96px;
+}
+.saleGame__price{
+    color: var(--primary_white);
+    text-align: center;
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-weight: 400;
+}
+/* ================================Catalog Start================================*/
+#catalogPart{
+    background-color: #212121;
+    padding: 45px 111px 40px 45px;
+    display: flex;
+    gap: 135px;
+}
+.catalog__title{
+    color: var(--primary_white);
+    font-family: var(--Barlow);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 60px 0 30px;
+}
+.catalogPart__left{
+    max-width: 605px;
+}
+.catalogPart__title{
+    color: var(--red);
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+}
+.catalogPart__title2{
+    color: var(--primary_white);
+    font-family: var(--Barlow);
+    font-size: 38px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+.catalogPart__summery{
+    color: var(--text__gray);
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+.catalogPart__right{
+    width: 426px;
+    height: 370px;
+    /* background-color: gray; */
+    position: relative;
+}
+.catalogPart__img1{
+    width: 209px;
+    height: 305px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.catalogPart__img2{
+    width: 209px;
+    height: 305px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.catalogPart__img3{
+    width: 219.336px;
+    height: 330px;
+    position: absolute;
+    top: 50%;
+    left: 28.99px;
+    transform: translateY(-50%);
+}
+.catalogPart__img4{
+    width: 219.336px;
+    height: 330px;
+    position: absolute;
+    top: 50%;
+    right: 28.99px;
+    transform: translateY(-50%);
+}
+.catalogPart__img5{
+    width: 258.33px;
+    height: 370px;
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transform: translateY(-50%);
+}
+
+
+/* ================================Catalog end================================*/
+/* ================================Black Friday Sale end================================*/
+
+
+/* ================================Accesories S================================*/
+
+#accesoriesPart{
+    background-color: var(--background__deep);
+    padding: 90px 0 100px;
+}
+.accesoriesPart--line{
+    max-width: 454px;
+}
+.accesoriesPart--line::after{
+    width: 120px;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: var(--red);
+    bottom: 9%;
+}
+.accesoriesPart__boxes{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    padding-top: 100px;
+    padding-top: 100px;
+}
+
+.accesoriesPart__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    background-color: var(--background);
+    width: 315px;
+    height: 475px;
+    padding: 24px 0;
+    transition: all ease-in-out .4s;
+    border: none;
+}
+.accesoriesPart__box:hover{
+    transform: scale(1.05);
+    border: 2px solid var(--red);
+
+}
+/* .accesoriesPart__box:hover .accesoriesBox__link{
+   
+} */
+.accesoriesBox__price{
+    color: var(--primary_white);
+    text-align: center;
+    font-family: var(--Oswald);
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+.accesoriesBox__title{
+    color: var(--primary_white);
+    text-align: center;
+    font-family: var(--Oswald);
+    font-size: 25px;
+    font-weight: 600;   
+    padding-top: 45px; 
+}
+.accesoriesBox__link{
+    color: var(--red);
+    text-align: center;
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.accesoriesBoxs__lLink{
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    color: var(--primary_white);
+    display: flex;
+    align-items: center;
+}
+/* .accesoriesBoxs__lLink:hover{
+    color: var(--red);
+}
+.accesoriesBoxs__lLink:hover .accesoriesBoxs__icon{
+    background-color: var(--primary_white);
+} */
+.accesoriesBoxs__rLink{
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    color: var(--primary_white);
+    display: flex;
+    align-items: center;
+    
+}
+.accesoriesBoxs__icon{
+    text-align: center;
+    background: var(--red);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* ================================Accesories end================================*/
+/* ================================Meet Start================================*/
+
+#meetPart{
+    background-color: var(--background);
+    padding: 100px 0;
+}
+.meetPart--line{
+    width: 498px;
+}
+.meetPart--line::after{
+    position: absolute;
+    content: "";
+    width: 105px;
+    height: 3px;
+    background-color: var(--red);
+    bottom: 9%;
+    right: 7%;
+}
+.meetPart__boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap : 20px;
+    padding-top: 50px;
+}
+.meetpart__box{
+    width: 650px;
+    height: 428.346px;
+    /* padding: 216px 0 0; */
+    display: flex;
+    align-items: flex-end;
+    transition: all ease-in-out .6s;
+}
+.meetpart__box:hover{
+    filter: grayscale(0);
+}
+.meetpart__box:hover .meetBox__summary{
+    display: block;
+    width: 300px;
+}
+.meetpart__box:hover .meetBox__bottom{
+    display: flex;
+}
+.meetpartBox--img1{
+    background-image: url(./images/team-3\ 1.png);
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+}
+.meetBox__content{
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    background: rgba(37, 36, 36, 0.38);
+    width: 650px;
+    /* height: 212.181px; */
+    padding: 40px 58px 30px 30px;
+}
+.meetBox__title{
+    color: var(--primary_white);
+    font-family: var(--Barlow);
+    font-size: 30px;
+    font-weight: 600;
+}
+.meetBox__summary{
+    color: var(--primary_white);
+    font-family: var(--Oswald);
+    font-size: 16px;
+    width: 300px;
+    font-weight: 400;
+    padding: 6px 0 20px;
+    display: none;
+    transition: all ease-in-out .6s;
+}
+.meetBox__bottom{
+    gap: 20px;
+    display: none;
+    transition: all ease-in-out .6s;
+}
+.meetBox__bBtn{
+    background-color: var(--red);
+    padding: 4.5px 20px;
+    color: var(--primary_white);
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    margin-right: 290px;
+}
+.meetBox__bLink{
+    background-color: var(--red);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: var(--primary_white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.meetpartBox--img2{
+    background-image: url(./images/team-2\ 1.png);
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+}
+.meetpartBox--img3{
+    background-image: url(./images/team-1\ 1.png);
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+}
+.meetpartBox--img4{
+    background-image: url(./images/team-4\ 1.png);
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+}
+
+
+
+/* ================================Meet end================================*/
+/* ================================FAQ Start================================*/
+
+#faqPart{
+    background-color: var(--background__deep);
+    padding: 55px 0 174px;
+}
+
+.faqPart--line{
+    width: 520px;
+}
+.faqPart--line::after{
+    width: 120px;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: var(--red);
+    bottom: 9%;
+}
+
+
+
+/* ================================FAQ end================================*/
 
 
