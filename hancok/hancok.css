@@ -655,98 +655,9 @@ body{
     background-color: var(--red);
 }
 /* ================================Contest E================================*/
-
-
-
-
-
-/* #streaminPart{
-
-    background-color: var(--background__deep);
-    padding: 90px 0;
-}
-
-
-.streamin__videos{
-    padding-top: 80px;
-    display: flex;
-    column-gap: 20px;
-}
-.video{
-    position: relative;
-    width: 427px;
-    height: 273px;
-
-}
-.video__img{
-    width: 427px;
-    height: 273px;
-    background: url(./images/tour-1\ 1.png);
-    filter: grayscale(100%);
-    position: relative;
-}
-
-
-.video__playIcon{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-}
-
-.video__content{
-    display: flex;
-    align-items: flex-end;
-    column-gap: 185px;
-    padding: 196px 0 24px 25px;
-    /* padding-top: 196px;
-    padding-left: 25px; 
-}
-.videoContent__title{
-    color: var(--primary_white);
-    font-family: var(--Barlow);
-    font-size: 22px;
-    font-weight: 600;
-    max-width: 167px;
-}
-.videoContent__summary{
-    color: var(--primary_white);
-    font-family: var(--Oswald);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    letter-spacing: 0.96px;
-}
-.video__content__right{
-    position: absolute;
-    bottom: 10%;
-    right:25px;
-}
-.videoContent__rightP{
-    color: var(--primary_white);
-    font-family: var(--Oswald);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    position: relative;
-}
-.videoContent__rightP::before{
-    width: 5px;
-    height: 5px;
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    top: 60%;
-    left: -10px;
-    background-color: var(--red);
-} */
-
-
-
-
 /* ================================streamin end================================*/
+
+
 
 
 /* ================================Black Friday Sale Start================================*/
@@ -949,6 +860,9 @@ body{
 /* ================================Black Friday Sale end================================*/
 
 
+
+
+
 /* ================================Accesories S================================*/
 
 #accesoriesPart{
@@ -1031,12 +945,6 @@ body{
     display: flex;
     align-items: center;
 }
-/* .accesoriesBoxs__lLink:hover{
-    color: var(--red);
-}
-.accesoriesBoxs__lLink:hover .accesoriesBoxs__icon{
-    background-color: var(--primary_white);
-} */
 .accesoriesBoxs__rLink{
     font-size: 50px;
     position: absolute;
@@ -1057,6 +965,10 @@ body{
 }
 
 /* ================================Accesories end================================*/
+
+
+
+
 /* ================================Meet Start================================*/
 
 #meetPart{
@@ -1151,9 +1063,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-
 .meetpartBox--img2{
     background-image: url(./images/team-2\ 1.png);
     background-repeat: no-repeat;
@@ -1173,11 +1083,17 @@ body{
 
 
 /* ================================Meet end================================*/
+
+
+
+
+
 /* ================================FAQ Start================================*/
 
 #faqPart{
     background-color: var(--background__deep);
     padding: 55px 0 174px;
+    position: relative;
 }
 
 .faqPart--line{
@@ -1191,9 +1107,242 @@ body{
     background-color: var(--red);
     bottom: 9%;
 }
+.download__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 92px;
+    justify-content: space-between;
+    row-gap: 150px;
+    align-items: ;
+    position: relative;
+}
+.download__wrapper::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 369px;
+    background: var(--text__gray);
+    left: 45%;
+    transform: translateX(-50%);
+}
+.download__wrapper::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 1320px;
+    background: var(--text__gray);
+    top: 55%;
+    transform: translateY(-50%);
+}
+.download__box{
+    display: flex;
+    width: 660px;
+    gap: 42px;
+}
+.download__box:hover .download__title{
+    color: var(--red);
+    
+}
+.download__number{
+    color: var(--primary_white);
+    font-family: var(--Barlow);
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    width: 70px;
+    height: 70px;
+    background-color: var(--red);
+}
+.download__title{
+    color: var(--primary_white);
+    font-family: var(--Barlow);
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 17px;
+    transition: all ease-in-out .3s;
+}
+.download__summary{
+    color: var(--text__gray);
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 427px;
+}
 
 
-
+/* ================================InboxPart Start================================*/
+.inboxPart{
+    position: absolute;
+    bottom: -20%;
+    transform: translateY(-50%);
+}
+.inboxPart__content{
+    display: flex;
+    width: 1320px;
+    height: 165px;
+    background-color: var(--red);
+    align-items: center;
+    padding: 35px 30px;
+    gap: 140px;
+}
+.inboxPart__title{
+    color: var(--primary_white);
+    font-family: var(--Barlow);
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 725px;
+}
+.inboxPart__Email{
+    position: relative;
+}
+.inboxPart__input{
+    width: 409px;
+    height: 39px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.inboxPart__input::placeholder{
+    color: var(--text__gray);
+    font-family: var(--Barlow);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.inboxPart__btn{
+    width: 117px;
+    height: 39px;
+    padding: 10px 28px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--background);
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+}
+/* ================================InboxPart  end================================*/
 /* ================================FAQ end================================*/
+
+
+
+/* ================================Footer Start================================*/
+
+#footerPart{
+    padding: 120px 0 25px;
+    background-color: var(--background);
+}
+.footerPart__wrapper{
+    display: flex;
+}
+.footerPart__left{
+    max-width: 451px;
+}
+.footerPart__summary{
+    padding: 30px 0 60px;
+    color: var(--text__gray);
+    font-family: var(--Oswald);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.footerPart__socialIcons{
+    display: flex;
+    gap: 10px;
+}
+.footer__icons{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background__deep);
+    color: var(--primary_white);
+    font-size: 1.5rem;
+    transition: all ease-in-out .3s;
+}
+.footer__icons:hover{
+    background-color: var(--red);
+}
+.footerPart__mLeft{
+    padding-left: 107px;
+}
+.footerPart__title{
+    color: var(--primary_white);
+    font-family: var(--Barlow);
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1.75px;
+}
+.footerPart__link{
+    color: var(--text__gray);
+    font-family: var(--Oswald);
+    font-size: 16px;;
+    font-weight: 400;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.footerPart__link:hover{
+    color: var(--red);
+}
+.footerPart__mRight{
+    padding-left: 155px;
+}
+.footerPart__right{
+    max-width: 320px;
+    margin-left:  155px;
+}
+.footerPart__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+/* ================================Copyright Start================================*/
+
+
+.copyrightPart__text{
+    color: var(--primary_white);
+    font-family: var(--Barlow);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding-top: 120px;
+    position: relative;
+}
+.copyrightPart__span{
+    color: var(--red);
+    font-family: var(--Barlow);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+.copyrightPart{
+    position: relative;
+}
+.copyrightPart__text::before{
+    position: absolute;
+    content: "";
+    width: 1320px;
+    height: 1px;
+    background-color: var(--text__gray);
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+}
+/* ================================Copyright end================================*/
+
+
+/* ================================Footer end================================*/
 
 
