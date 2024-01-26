@@ -187,11 +187,14 @@
    font-style: normal;
    font-weight: 400;
    line-height: 28px;
+   position: relative;
 }
 .fName--width::placeholder{
-   display: flex;
-   justify-content: start;
-   align-items: start;
+   position: absolute;
+   top: 18px;
+}
+.fName--width[type="text"]{
+   
 }
 .fName--width{
    width: 908px;
@@ -204,6 +207,7 @@
    font-size: 16px;
    font-style: normal;
    font-weight: 400;
+
 }
 .btm2 {
    width: 185px;

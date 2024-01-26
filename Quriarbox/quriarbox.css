@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ================================
+        common css start
+================================*/
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a, div, span, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #FFF;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/* ================================common css END================================*/
+/* ================================Variable ================================*/
+
+:root {
+    --Primary: #0088B4;
+    --Danger: #F95C19;
+    --Warning: #FFAF0F;
+    --Success: #00BA77;
+    --infp: #00CEC2;
+    --White: #FFFFFF;
+    --lightText: #F0F4F9;
+    --DarkText: #817382;
+    --sTect: #4D4D4D;
+    --grayText: #261134;
+    --gray100: #EBEBF5;
+    --gray200: #DBDBE9;
+    --gray300: #C5C5D2;
+    --gray400: #AFAEBC;
+    --gray500: #9291A1;
+    --gray600: #7B7A8B;
+    --gray700: #5C5B6C;
+    --gray800: #464558;
+    --gray900: #2F2E41;
+    --gray1000: #222132;
+    --gray1100: #11111D;
+    --warningSoft: #FFEDC9;
+    --dangerSoft: #FFE4D9;
+    --oxanium: "Oxanium", sans-serif;
+    --raleway: "Raleway", sans-serif;
+
+}
+
+
+
+/* ================================Variable ================================*/
+/* ================================Navbar css ================================*/
+
+#navbarPart {
+    background: radial-gradient(9917.17% 140.83% at 0.83% 0%, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.15) 100%);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.navLink {
+    color: var(--DarkText);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navLink:hover {
+    color: var(--Danger);
+}
+
+.seachIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: var(--warningSoft);
+    width: 55px;
+    height: 55px;
+    border-radius: 6px;
+    color: var(--Warning);
+}
+
+.seachIcon:hover {
+    background: var(--Danger);
+    color: var(--dangerSoft);
+}
+
+.navBtn {
+    background: var(--dangerSoft);
+    padding: 12px 20px;
+    color: var(--Danger);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--oxanium);
+    font-size: 20px;
+    font-weight: 700;
+    transition: all ease-in-out .4s;
+}
+
+.navBtn:hover {
+    background: var(--Danger);
+    color: var(--White);
+}
+
+
+
+
+
+/* ================================Navbar css================================*/
+/* ================================Banner css================================*/
+
+#Banner {
+    background: linear-gradient(180deg, #FFF7E7 0%, #FFF1DC 100%);
+    padding: 170px 0 180px;
+}
+
+/* ================================Hero css================================*/
+
+.hero__title {
+    color: var(--grayText);
+    font-family: var(--raleway);
+    font-size: 49px;
+    font-weight: 400;
+}
+
+.hero__title span {
+    font-weight: 600;
+}
+
+.hero__sumary {
+    width: 330px;
+    height: 56px;
+    color: var(--sTect);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 16px 0 41px;
+}
+
+.heroBtn {
+    color: var(--White);
+    background: var(--Danger);
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--oxanium);
+    font-size: 20px;
+    font-weight: 700;
+    transition: all ease-in-out .4s;
+}
+
+.heroBtn:hover {
+    color: var(--Danger);
+    background: var(--White);
+    border: 1px solid var(--Danger);
+}
+
+.heroBtn i {
+    font-weight: 500;
+}
+
+
+
+/* ================================hero css================================*/
+/* ================================Service css================================*/
+#services {
+    padding-top: 170px;
+}
+
+.services__title {
+    color: var(--Theme-Colors-Danger, #F95C19);
+    font-family: var(--oxanium);
+    font-size: 31.25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.services__sumary {
+    color: var(--Gray1100, #11111D);
+    text-align: center;
+    font-family: var(--raleway);
+    font-size: 34px;
+    font-weight: 800;
+
+}
+
+.cardPart {
+    padding-top: 80px;
+}
+
+.cardWidth {
+    max-width: 424px;
+}
+
+.cardWidth:nth-child(1),
+.cardWidth:nth-child(2) {
+    margin-right: 24px;
+}
+
+/* .Card__m {
+    margin-right: 24px;
+} */
+
+.serviceCard__title {
+    padding: 30px 0;
+    color: var(--gray800, #464558);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.serviceCard__summary {
+    color: var(--Gray-600, #7B7A8B);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+}
+
+.service__list {
+    list-style: var(--Danger);
+    color: var(--Danger);
+    padding: 40px 0 60px;
+}
+
+.service__item span {
+    color: var(--gray600);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.serviceCard__btn {
+    color: var(--Danger, #F95C19);
+    font-family: var(--oxanium);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    width: 305px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid var(--Danger, #F95C19);
+    transition: all ease-in .2s;
+}
+
+.serviceCard__btn:hover {
+    background: var(--Danger, #F95C19);
+    color: var(--White);
+}
+
+
+/* ================================Service css================================*/
+/* ================================Achievment css================================*/
+
+#achievmentPart{
+    padding-top: 170px;
+}
+.achievmentPart__img{
+
+}
+.achievmentPart__title{
+    color: var(--Danger, #F95C19);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 39px;
+    font-weight: 800;
+    line-height: 110%; 
+    padding: 28px 0 20px;
+}
+.achievmentPart--title{
+    padding: 18px 0 10px;
+}
+.achievmentPart__sumary{
+    color: var(--gray800, #464558);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+.fa-trophy-star{
+    font-size: 4rem;
+    color: var(--gray900);
+}
+
+
+
+/* ================================achievment css================================*/
+/* ================================FASTEST DELIVERY css================================*/
+
+#fastestDeliveryPart{
+    padding-top: 170px;
+}
+.fastestDeliveryPart__img{
+    position: relative;
+}
+.fastestDeliveryPart__img::after{
+    position: absolute;
+    content: "";
+    bottom: -282px;
+    left: 0;
+    background: #0A090D;
+    opacity: .8;
+    width: 1320px;
+    height: 580px;
+    border-radius: 20px;
+}
+.fastestDeliveryPart__wrapper{
+    position: relative;
+}
+.fastestDeliveryPart__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fastestDeliveryPart__title{
+    color: var(--Danger, #F95C19);
+    text-align: center;
+    font-family: var(--oxanium);
+    font-size: 31.25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px 0 20px;
+}
+.fastestDeliveryPart__summary{
+    color: var(--White, #FFF);
+    text-align: center;
+    max-width: 673px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 120%;
+}
+i[class="fa-solid fa-circle-play" ]{
+    color: #f95c19;
+    font-size: 5.8rem;
+    background: white;
+    border-radius: 50%;
+
+
+/* ================================FASTEST DELIVERY css================================*/
+
+
+
+
+
+
+
+
+/* ================================Banner css================================*/
