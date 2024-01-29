@@ -506,12 +506,168 @@ i[class="fa-solid fa-circle-play"] {
 
 
 /* ================================Form css================================*/
+/* ================================findUs css================================*/
+
+.finUs__title {
+    color: var(--gray800, #464558);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.finUs__detail {
+    color: var(--gray700, #5C5B6C);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 7px 0;
+
+}
+
+.finUs__detail i {
+    color: var(--Warning);
+    text-align: center;
+}
+
+.findUs__social {
+    color: #EBEBF5;
+    font: 38px;
+    padding-top: 10px;
+    transition: all ease-in-out .3s;
+}
+
+.findUs__social:hover {
+    color: var(--Danger);
+}
+
+.findUs--btn {
+    padding: 15px 113px;
+}
 
 
+/* ================================findUs css================================*/
 
+#emailPart {
+    background-color: var(--gray1000);
+    padding: 84px 0;
+}
 
+.email__title {
+    color: var(--White, #FFF);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 39px;
+    font-weight: 800;
+}
+
+.email__summary {
+    color: var(--gray300, #C5C5D2);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.emailLeft__title {
+    color: var(--Danger, #F95C19);
+    font-family: var(--oxanium);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.email__input {
+    width: 386px;
+    height: 49px;
+    background: transparent;
+    outline: none;
+    padding: 15px 16px;
+    /* margin: 13px 16px 0 0; */
+    border: 1px solid var(--gray300, #C5C5D2);
+    background: #222132;
+}
+
+.email__input::content {
+    color: #FFF;
+}
+
+.email__btn {
+    border-radius: 5px;
+    background: #F95C19;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: var(--oxanium);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin-left: 16px;
+    width: 134px;
+    height: 49px;
+    border: none;
+    outline: none;
+    transition: all ease-in-out .3s;
+}
+
+.email__btn:hover {
+    background: var(--warningSoft);
+    color: var(--Danger);
+}
 
 
 
 
 /* ================================Banner css================================*/
+/* ================================Footer css================================*/
+
+#footerPart {
+    background-color: var(--gray900);
+    padding: 53px 0;
+}
+
+.footer__summary {
+    color: var(--gray500, #9291A1);
+    font-size: 16px;
+    font-weight: 600;
+    width: 35%;
+}
+
+.footerList__title {
+    color: var(--White, #FFF);
+    font-family: var(--oxanium);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 8px;
+}
+
+.footer__item {
+    color: var(--gray500, #9291A1);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px 0;
+    transition: all ease-in-out .3s;
+}
+
+.footer__item:hover {
+    color: var(--dangerSoft);
+
+}
+
+
+/* ================================Footer  css================================*/
+/* ================================end  css================================*/
+#end{
+    background: var(--gray1100);
+    
+}
+.end__rights {
+    color: var(--gray200, #DBDBE9);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.end__company {
+    color: #E0DEDE;
+    font-size: 13px;
+    font-weight: 800;
+}
+.end__company span{
+    color: #F95C19;
+}
