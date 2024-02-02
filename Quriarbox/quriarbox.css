@@ -278,7 +278,10 @@ body {
     padding-top: 170px;
 }
 
-.achievmentPart__img {}
+.achievmentPart__img {
+    max-width: 65px;
+    height: 60px;
+}
 
 .achievmentPart__title {
     color: var(--Danger, #F95C19);
@@ -378,6 +381,16 @@ i[class="fa-solid fa-circle-play"] {
 
 /* ================================FASTEST DELIVERY css================================*/
 /* ================================TESTIMONIAL css================================*/
+.testimonial__top {
+    position: relative;
+}
+
+.testimonial__svg {
+    position: absolute;
+    top: 50%;
+    left: -141px;
+    transform: translateY(-50%);
+}
 
 .testimonial__title {
     color: var(--Theme-Colors-Danger, #F95C19);
@@ -478,6 +491,14 @@ i[class="fa-solid fa-circle-play"] {
     line-height: 145%;
 }
 
+.form-control:focus {
+    /* border:  #a7abae !important; */
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+
+}
+
 .form__comment {
     color: var(--gray500, #9291A1);
     font-size: 16px;
@@ -574,6 +595,7 @@ i[class="fa-solid fa-circle-play"] {
 
 .email__input {
     width: 386px;
+    color: #FFF;
     height: 49px;
     background: transparent;
     outline: none;
@@ -653,10 +675,11 @@ i[class="fa-solid fa-circle-play"] {
 
 /* ================================Footer  css================================*/
 /* ================================end  css================================*/
-#end{
+#end {
     background: var(--gray1100);
-    
+
 }
+
 .end__rights {
     color: var(--gray200, #DBDBE9);
     font-size: 13px;
@@ -668,6 +691,12 @@ i[class="fa-solid fa-circle-play"] {
     font-size: 13px;
     font-weight: 800;
 }
-.end__company span{
+
+.end__company a {
     color: #F95C19;
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+.end__company a:hover {
+    color: var(--warningSoft);
 }
