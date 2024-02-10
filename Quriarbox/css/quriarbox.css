@@ -290,7 +290,7 @@ body {
 
 }
 
-.img1 {
+.bannerAni__img1 {
     position: absolute;
     bottom: 361px;
     left: 423px;
@@ -306,7 +306,7 @@ body {
 }
 
 
-.img3 {
+.bannerAni__img3 {
     position: absolute;
     bottom: 212px;
     /* bottom: 0px; */
@@ -314,7 +314,7 @@ body {
     /* animation: drop2 2s ease-in-out infinite; */
 }
 
-.img4 {
+.bannerAni__img4 {
     position: absolute;
     bottom: 295px;
     /* bottom: 0px; */
@@ -322,7 +322,7 @@ body {
     /* animation: drop3 2s ease-in-out infinite; */
 }
 
-.img5 {
+.bannerAni__img5 {
     position: absolute;
     bottom: 164px;
     left: 254px;
@@ -330,28 +330,28 @@ body {
 
 }
 
-.img6 {
+.bannerAni__img6 {
     position: absolute;
     bottom: 20px;
     left: 440px;
     /* animation: drop1 2s ease-in-out infinite; */
 }
 
-.img7 {
+.bannerAni__img7 {
     position: absolute;
     bottom: 206px;
     left: 654px;
     animation: grow 2s ease-in-out infinite;
 }
 
-.img9 {
+.bannerAni__img9 {
     position: absolute;
     bottom: 200px;
     left: -100px;
     animation: cloud 12.5s ease-in-out infinite;
 }
 
-.img8 {
+.bannerAni__img8 {
     position: absolute;
     bottom: 438px;
     left: -100px;

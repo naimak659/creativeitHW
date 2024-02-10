@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* =========== Common css S=========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: circularStd;
+}
+
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a, div, span, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #FFF;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: circularStd;
+    src: url(../fontA/circular-std-medium-500.ttf);
+}
+
+
+/* =========== Common css =========== */
+/* =========== Root css S =========== */
+:root {
+    --dmSans: "DM Sans", sans-serif;
+    --white: #fff;
+    --primary_bg: #60E1CB;
+    --secondary_bg: #E9FBF8;
+    --primary_font: #292525;
+    --secondary_font: #000000;
+    --blue: #7BC0E3;
+    --popins: "Poppins", sans-serif;
+}
+
+/* =========== Root css =========== */
+/* =========== Navbar css S=========== */
+
+
+.navbarList__item{
+    color: var(--blue);
+    
+}
+.navbar__btn{
+    background: var(--blue);
+    outline: none;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+
+/* =========== Navbar css =========== */
+/* =========== headins css S=========== */
+
+
+#headingPart{
+    /* padding: 180px; */
+}
+.heading__title{
+    color: var(--primary_font);
+    font-weight: 900;
+    letter-spacing: -1.5%;
+    max-width: 300px;
+    position: relative;
+}
+.heading__title::before{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 4px;
+    background: var(--blue);
+    top: -22px;
+    left: 0px;
+}
+.heading__title span{
+    color: var(--blue);
+}
+
+
+
+
+/* =========== headins css =========== */
+
+
+
