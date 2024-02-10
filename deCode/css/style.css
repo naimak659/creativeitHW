@@ -69,13 +69,23 @@ body {
 }
 
 .navbar__btn {
-    background: var(--blue);
+    background: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
     outline: none;
-    border: none;
+
     padding: 12px 15px;
     border-radius: 50px;
-    color: var(--white);
     font-weight: 500;
+    transition: all ease-in .3s;
+
+}
+
+.navbar__btn:hover {
+    background: var(--blue);
+    color: var(--white);
+    border: 1px solid transparent;
+
 }
 
 
@@ -84,6 +94,7 @@ body {
 
 #headingPart {
     overflow: hidden;
+    height: 950px;
 }
 
 .heading__title {
@@ -119,25 +130,52 @@ body {
 .commonBtn {
     outline: 0;
     border: 0;
-    padding: 20px 35px;
+    padding: 15px 25px;
     border-radius: 50px;
     font-size: 20px;
     font-weight: 700px;
-}
-
-.headingBtnG {
-    color: var(--white);
-    background: var(--primary_bg);
-    box-shadow: 8px 113px 174px 2px #60E1CB;
-
-}
-
-.headingBtnC {
     color: var(--primary_bg);
     background: var(--white);
     border: 1px solid #D5D4DE;
+    transition: all ease-in-out .3s;
 }
 
+.commonBtn:hover {
+    color: var(--white);
+    background: var(--primary_bg);
+    box-shadow: 0px 46px 53px 0px rgba(96, 225, 203, 0.56);
 
+}
+
+.heading__right {
+    position: relative;
+}
+
+.banner__img {
+    z-index: 5;
+}
+@keyframes rotate {
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+}
+.circle1 {
+    position: absolute;
+    z-index: -1;
+    top: 177px;
+    right: -274px;
+    animation: rotate 15s ease-in-out infinite;
+}
+
+.circle2 {
+    position: absolute;
+    z-index: -1;
+    top: 262px;
+    left: -269px;
+    animation: rotate 20s ease-in-out infinite;
+}
 
 /* =========== headins css =========== */
