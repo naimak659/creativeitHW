@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* =========== Common css S=========== */
 
 * {
@@ -6,11 +6,10 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-
 }
 
-
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
@@ -23,15 +22,24 @@ img {
     vertical-align: middle;
 }
 
-h1, h2, h3, h4, h5, h6, p, li, a, div, span, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+div,
+span,
+ul {
     margin: 0;
     padding: 0;
 }
 
 body {
-    color: #FFF;
     font-family: circularStd;
-
 }
 
 .container {
@@ -44,40 +52,41 @@ body {
     src: url(../fontA/circular-std-medium-500.ttf);
 }
 
-
 /* =========== Common css =========== */
 
 /* =========== animation css S=========== */
 @keyframes rotate {
-    0%, 100%{
+
+    0%,
+    100% {
         transform: rotate(0deg);
     }
-    50%{
+
+    50% {
         transform: rotate(360deg);
     }
 }
+
 /* =========== animation css =========== */
 
 /* =========== Root css S =========== */
 :root {
     --dmSans: "DM Sans", sans-serif;
     --white: #fff;
-    --primary_bg: #60E1CB;
-    --secondary_bg: #E9FBF8;
+    --primary_bg: #60e1cb;
+    --secondary_bg: #e9fbf8;
     --primary_font: #292525;
     --secondary_font: #000000;
-    --blue: #7BC0E3;
+    --blue: #7bc0e3;
     --popins: "Poppins", sans-serif;
 }
 
 /* =========== Root css =========== */
 /* =========== Navbar css S=========== */
 
-
 .navbarList__item {
     color: var(--blue);
     padding-right: 20px !important;
-
 }
 
 .navbar__btn {
@@ -89,17 +98,14 @@ body {
     padding: 12px 15px;
     border-radius: 50px;
     font-weight: 500;
-    transition: all ease-in .3s;
-
+    transition: all ease-in 0.3s;
 }
 
 .navbar__btn:hover {
     background: var(--blue);
     color: var(--white);
     border: 1px solid transparent;
-
 }
-
 
 /* =========== Navbar css =========== */
 /* =========== headins css S=========== */
@@ -148,8 +154,8 @@ body {
     font-weight: 700px;
     color: var(--primary_bg);
     background: var(--white);
-    border: 1px solid #D5D4DE;
-    transition: all ease-in-out .3s;
+    border: 1px solid #d5d4de;
+    transition: all ease-in-out 0.3s;
 }
 
 .commonBtn:hover {
@@ -157,7 +163,6 @@ body {
     background: var(--primary_bg);
     box-shadow: 0px 46px 53px 0px rgba(96, 225, 203, 0.56);
     border: 1px solid transparent;
-
 }
 
 .heading__right {
@@ -185,3 +190,191 @@ body {
 }
 
 /* =========== headins css =========== */
+/* =========== Services css S=========== */
+
+#ServicePart {
+    background: var(--secondary_bg);
+    padding: 120px 0 180px;
+}
+
+.servicePart__title {
+    color: var(--primary_font);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.servicePart__summary {
+    font-family: var(--dmSans);
+    color: var(--secondary_font);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.serviceCard {
+    background: var(--white);
+    padding: 96px 80px 32px 42px;
+    border-top: 15px solid var(--primary_bg);
+}
+
+.serviceCard__img {
+    margin-bottom: 36px;
+}
+
+.serviceCard__title {
+    color: var(--primary_font);
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.serviceCard__details {
+    color: var(--secondary_font);
+    font-family: var(--dmSans);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 16px 0 32px;
+}
+
+.serviceCard__link {
+    color: var(--blue);
+    font-family: var(--dmSans);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* =========== Services css =========== */
+/* =========== Portfolio css S =========== */
+#PortfolioPart {
+    margin: 80px 0;
+    position: relative;
+}
+
+.PortfolioPart__tTItile {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--blue);
+}
+
+.PortfolioPart__tSummary {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--primary_font);
+}
+
+.Portfolio__btn {
+    color: var(--blue);
+    outline: none;
+    font-weight: 400;
+    font-size: 20px;
+    background: transparent;
+    padding: 20px 40px;
+    border-radius: 55px;
+    border: 3px solid transparent;
+}
+
+.Portfolio__btn:hover {
+    border-radius: 55px;
+    border: 3px solid var(--blue);
+}
+
+.Portfolio__slide {
+    position: absolute;
+    width: 1486px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide__details {
+    font-size: 18px;
+    color: var(--secondary_font);
+    font-weight: 300;
+    padding-top: 32px;
+}
+
+.Portfolio__slide::after {
+    content: url("../images/circle3.png");
+    position: absolute;
+    z-index: -2;
+    top: -146px;
+    left: -200px;
+    animation: rotate 10s ease-in-out infinite;
+}
+
+.Portfolio__overlay {
+    width: 100%;
+    height: 423px;
+    background: var(--primary_bg);
+    margin-top: 230px;
+}
+
+
+.Portfolio__overlay::after {
+    content: url("../images/circle3.png");
+    position: absolute;
+    z-index: -1;
+    bottom: -20%;
+    left: -10%;
+    animation: rotate 10s ease-in-out infinite;
+}
+
+
+.PortfolioOverlay__btn {
+    background: var(--primary_font);
+    color: var(--white);
+    padding: 22px 60px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 46px 53px 0px rgba(96, 225, 203, 0.56);
+}
+
+
+/* .Portfolio__slide {
+    z-index: 5;
+    position: relative;
+}
+
+.Portfolio__slide::after {
+    content: url("../images/circle3.png");
+    position: absolute;
+    z-index: -2;
+    top: -146px;
+    left: -200px;
+    animation: rotate 15s ease-in-out infinite;
+}
+
+.Portfolio__overlay {
+    position: relative;
+    width: 100%;
+}
+
+.Portfolio__overlay::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    background: var(--primary_bg);
+    bottom: -133px;
+    left: 0px;
+}
+
+ */
+
+
+
+/* =========== Portfolio css =========== */
+/* =========== Idea css S=========== */
+
+
+#ideaPart {
+    padding: 80px 0;
+}
+
+/* =========== Idea css =========== */
