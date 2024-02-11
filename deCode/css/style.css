@@ -46,6 +46,18 @@ body {
 
 
 /* =========== Common css =========== */
+
+/* =========== animation css S=========== */
+@keyframes rotate {
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+}
+/* =========== animation css =========== */
+
 /* =========== Root css S =========== */
 :root {
     --dmSans: "DM Sans", sans-serif;
@@ -144,6 +156,7 @@ body {
     color: var(--white);
     background: var(--primary_bg);
     box-shadow: 0px 46px 53px 0px rgba(96, 225, 203, 0.56);
+    border: 1px solid transparent;
 
 }
 
@@ -154,15 +167,8 @@ body {
 .banner__img {
     z-index: 5;
 }
-@keyframes rotate {
-    0%, 100%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(360deg);
-    }
-}
-.circle1 {
+
+.banner__circle {
     position: absolute;
     z-index: -1;
     top: 177px;
@@ -170,7 +176,7 @@ body {
     animation: rotate 15s ease-in-out infinite;
 }
 
-.circle2 {
+.heading__circle2 {
     position: absolute;
     z-index: -1;
     top: 262px;
