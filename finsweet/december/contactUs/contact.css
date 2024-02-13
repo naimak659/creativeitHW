@@ -1,75 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+
 }
- ul, ol{
-    list-style: none;
- } 
- a{
-    text-decoration: none;
-    display: inline-block;
- }
- img {
-    vertical-align: middle;
- }
- h1, h2, h3,h4,h5,h6,p,li,a,div,span,ul {
-    margin: 0;
-    padding: 0;
- }
- body{
+
+ul, ol {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   display: inline-block;
+}
+
+img {
+   vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a, div, span, ul {
+   margin: 0;
+   padding: 0;
+}
+
+body {
    color: #FFF;
- }
+}
+
 .container {
-    width: 1278px;
-    margin: auto;
-}
- /* ================================
-        common css END
-================================*/
- /* ================================
-        variable start
-================================*/
-:root{
-    --white: #fff;
-    --buttonC: #FCD980;
-    --blue: #2405F2;
-    --text: #BBBBCB;
-    --backgroundC: #1C1E53;
-    --secondary_bg: #F4F6FC;
-    --backgroundtext: #282938;
-    --popins: 'Poppins', sans-serif;
-    --manrope: 'Manrope', sans-serif;
-    --gradiant: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+   width: 1278px;
+   margin: auto;
 }
 
- /* ================================
-        variable END
-================================*/
+/* ================================css END================================*/
+/* ================================variable start================================*/
+:root {
+   --white: #fff;
+   --buttonC: #FCD980;
+   --blue: #2405F2;
+   --text: #BBBBCB;
+   --backgroundC: #1C1E53;
+   --secondary_bg: #F4F6FC;
+   --backgroundtext: #282938;
+   --popins: 'Poppins', sans-serif;
+   --manrope: 'Manrope', sans-serif;
+   --gradiant: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+}
+
+/* ================================variable END================================*/
 
 
- /* ================================
-        NAVBAR START
-================================*/
+/* ================================NAVBAR START================================*/
 
-#navbar_part{
+#navbar_part {
    background-color: var(--backgroundC);
    padding: 16px 0;
 }
+
+@media screen and (max-width: 768px) {
+   #navbar_part {
+      background-color: var(--backgroundC);
+      padding: 8px 15px;
+   }
+
+   .menu_items {
+      display: none;
+   }
+
+   .main_menu .btm1 {
+      width: 70px;
+      height: 20px;
+   }
+}
+
+.logo__img {
+   max-width: 100%;
+}
+
 .main_menu {
    display: flex;
    align-items: center;
 }
+
 .menu_items ul {
    display: flex;
    padding-left: 452px;
-   column-gap: 32px;   
+   column-gap: 32px;
 }
+
 .main_menu .menu_items ul li a {
    color: var(--text);
    font-family: var(--popins);
@@ -77,10 +100,12 @@
    font-weight: 500;
    transition: all ease-in .2s;
 }
-.main_menu .menu_items ul li:nth-child(1) a{
+
+.main_menu .menu_items ul li:nth-child(1) a {
    color: var(--White);
 }
-.main_menu .menu_items ul li a:hover{
+
+.main_menu .menu_items ul li a:hover {
    color: var(--white);
    cursor: pointer;
    font-family: var(--popins);
@@ -88,6 +113,7 @@
    font-weight: 500;
    transform: translateY(-2px);
 }
+
 .main_menu .btm1 {
    width: 185px;
    height: 60px;
@@ -101,29 +127,28 @@
    margin-left: 32px;
    transition: all ease .2s;
 }
-.main_menu .btm1:hover{
+
+.main_menu .btm1:hover {
    color: var(--buttonC);
    background-color: var(--White);
    transform: translateY(-2px);
 }
+
 .main_menu .btm1 span {
    font-family: var(--popins);
 }
 
- /* ================================
-        NAVBAR end
-================================*/
+/* ================================NAVBAR end================================*/
 
- /* ================================
-        Contact US Start
-================================*/
-.contactUs{
+/* ================================Contact US Start================================*/
+.contactUs {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    padding: 128px 0;
 }
+
 .contactUs__top {
    text-align: center;
    margin-bottom: 60px;
@@ -131,6 +156,7 @@
    flex-direction: column;
    align-items: center;
 }
+
 .contactUs__title {
    color: var(--Dark-blue, #282938);
    text-align: center;
@@ -140,34 +166,39 @@
    font-weight: 600;
    line-height: 64px;
 }
-.contactUs__lorem{
+
+.contactUs__lorem {
    color: var(--Dark-blue, #282938);
    text-align: center;
    font-family: Poppins;
    font-size: 16px;
    font-style: normal;
    font-weight: 400;
-   line-height: 28px; 
+   line-height: 28px;
    max-width: 562px;
 }
-.contactUs__part{
+
+.contactUs__part {
    border-radius: 12px;
    background: var(--Grey, #F4F6FC);
    width: 1061px;
    padding: 55px 77px;
 }
-.contactUs__form{
+
+.contactUs__form {
    display: flex;
    flex-wrap: wrap;
    gap: 26px;
    justify-content: center;
 
 }
-.form{
+
+.form {
    display: flex;
    flex-direction: column;
 }
-.contactUs__label{
+
+.contactUs__label {
    color: #000;
    font-family: Poppins;
    font-size: 18px;
@@ -176,7 +207,8 @@
    line-height: 32px;
    padding: 6px;
 }
-#fName{
+
+#fName {
    width: 438px;
    padding: 18px 32px;
    border-radius: 8px;
@@ -189,14 +221,15 @@
    line-height: 28px;
    position: relative;
 }
-.fName--width::placeholder{
+
+.fName--width::placeholder {
    position: absolute;
    top: 18px;
 }
-.fName--width[type="text"]{
-   
-}
-.fName--width{
+
+.fName--width[type="text"] {}
+
+.fName--width {
    width: 908px;
    height: 138px;
    padding: 18px 32px;
@@ -209,6 +242,7 @@
    font-weight: 400;
 
 }
+
 .btm2 {
    width: 185px;
    height: 60px;
@@ -223,6 +257,74 @@
    margin-top: 32px;
 
 }
- /* ================================
-        Contact US end
-================================*/
+
+/* ================================Contact US end================================*/
+
+
+/* ================================Footer  start================================*/
+
+#footer {
+   background: var(--backgroundC, #1C1E53);
+   padding-top: 100px;
+}
+
+.footer {
+   display: flex;
+   gap: 140px;
+}
+
+.fLeft__top {
+   width: 399px;
+}
+
+.fLeft__top__summary {
+   color: var(--White, #FFF);
+   font-family: var(--popins);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 28px;
+   opacity: 0.8;
+   padding: 22px 0 89px 0;
+}
+
+.fLeft__bottom {
+   width: 517px;
+   height: 95px;
+   display: flex;
+   gap: 32px;
+   background: var(--buttonC);
+   padding: 18px 137px 16px 32px;
+}
+
+.bottomTitle {
+   color: var(--backgroundtext, #282938);
+   font-family: var(--popins);
+   font-size: 18px;
+   font-weight: 500;
+}
+
+.bottomAddress {
+   color: var(--backgroundtext, #282938);
+   font-family: var(--popins);
+   font-size: 16px;
+   font-weight: 400;
+   opacity: 0.8;
+}
+
+.fright__title {
+   font-family: var(--popins);
+   font-size: 48px;
+   font-weight: 600;
+   line-height: 64px;
+}
+
+.fright__details {
+   font-family: var(--popins);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 28px;
+}
+
+
+/* ================================Footer  end================================*/

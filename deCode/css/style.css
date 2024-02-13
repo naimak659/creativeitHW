@@ -149,17 +149,20 @@ body {
 .commonBtn {
     outline: 0;
     border: 0;
-    padding: 15px 25px;
     border-radius: 50px;
-    font-size: 20px;
-    font-weight: 700px;
-    color: var(--primary_bg);
-    background: var(--white);
-    border: 1px solid #d5d4de;
     transition: all ease-in-out 0.3s;
 }
 
-.commonBtn:hover {
+.headingBtn {
+    padding: 15px 25px;
+    color: var(--primary_bg);
+    background: var(--white);
+    font-size: 20px;
+    font-weight: 700px;
+    border: 1px solid #d5d4de;
+}
+
+.headingBtn:hover {
     color: var(--white);
     background: var(--primary_bg);
     box-shadow: 0px 46px 53px 0px rgba(96, 225, 203, 0.56);
@@ -433,12 +436,14 @@ body {
     font-size: 16px;
     color: var(--secondary_font);
 }
-.ideaPart__pic{
+
+.ideaPart__pic {
     position: absolute;
     bottom: 0px;
     right: 0px;
 }
-.ideaPart__pic::after{
+
+.ideaPart__pic::after {
     content: url(../images/circle5.png);
     position: absolute;
     z-index: -1;
@@ -448,5 +453,114 @@ body {
     animation: rotate 15s ease-in-out infinite;
 }
 
+#ideaPart::before {
+    content: url(../images/circle6.png);
+    position: absolute;
+    z-index: -1;
+    bottom: -20%;
+    left: 0%;
+    transform: translateY(-50%);
+    animation: rotate 25s ease-in-out infinite;
+}
+
 
 /* =========== Idea css =========== */
+/* =========== workUs css S =========== */
+
+#WorkUsPart {
+    padding: 162px 0;
+    background: var(--primary_bg);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.WorkUsPart__title {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--secondary_font);
+
+}
+
+.WorkUsPart__detail {
+    font-weight: 500;
+    font-family: var(--dmSans);
+    font-size: 24px;
+    color: var(--secondary_font);
+    line-height: 102.2%;
+    padding: 27px 0 60px;
+
+}
+
+.WorkUsPart__btn {
+    font-family: var(--popins);
+    font-weight: 500;
+    font-size: 22px;
+    padding: 26px 70px;
+    color: var(--white);
+    background: var(--primary_font);
+}
+
+#WorkUsPart::after {
+    content: url(../images/workUsMask.png);
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+/* =========== workUs css =========== */
+/* =========== Testimonial css S =========== */
+
+#testimonialPart {
+    padding: 170px 0 250px;
+    position: relative;
+}
+
+.testimonial__slide {
+    max-width: 1000px;
+    background: var(--white);
+    padding: 67px;
+}
+.testimonialSlide__point{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--secondary_font);
+}
+.testimonialSlide__comments{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary_font);
+}
+
+.profileImg1{
+    position: absolute;
+    bottom: -180px;
+    left: 100%;
+    transform: translateX(-50%);
+
+}
+.profileImg2{
+    position: absolute;
+    bottom: -180px;
+    left: 75%;
+    transform: translateX(-50%);
+}
+.profileImg3{
+    position: absolute;
+    bottom: -180px;
+    left: 125%;
+    transform: translateX(-50%);
+}
+.clientName{
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--primary_font);
+}
+.clientStatus{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--primary_bg);
+}
+
+/* =========== Testimonial css =========== */
