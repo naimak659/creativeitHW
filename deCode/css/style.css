@@ -2,24 +2,24 @@
 /* =========== Common css S=========== */
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    display: inline-block;
+  text-decoration: none;
+  display: inline-block;
 }
 
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 h1,
@@ -34,533 +34,529 @@ a,
 div,
 span,
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: circularStd;
-
+  font-family: circularStd;
 }
 
 .container {
-    width: 1320px;
-    margin: 0 auto;
+  width: 1320px;
+  margin: 0 auto;
 }
 
 @font-face {
-    font-family: circularStd;
-    src: url(../fontA/circular-std-medium-500.ttf);
+  font-family: circularStd;
+  src: url(../fontA/circular-std-medium-500.ttf);
 }
 
 /* =========== Common css =========== */
 
 /* =========== animation css S=========== */
 @keyframes rotate {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
 
-    0%,
-    100% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(360deg);
-    }
+  50% {
+    transform: rotate(360deg);
+  }
 }
 
 /* =========== animation css =========== */
 
 /* =========== Root css S =========== */
 :root {
-    --dmSans: "DM Sans", sans-serif;
-    --white: #fff;
-    --primary_bg: #60e1cb;
-    --secondary_bg: #e9fbf8;
-    --primary_font: #292525;
-    --secondary_font: #000000;
-    --blue: #7bc0e3;
-    --popins: "Poppins", sans-serif;
+  --dmSans: "DM Sans", sans-serif;
+  --white: #fff;
+  --primary_bg: #60e1cb;
+  --secondary_bg: #e9fbf8;
+  --primary_font: #292525;
+  --secondary_font: #000000;
+  --blue: #7bc0e3;
+  --popins: "Poppins", sans-serif;
 }
 
 /* =========== Root css =========== */
 /* =========== Navbar css S=========== */
 
 .navbarList__item {
-    color: var(--blue);
-    padding-right: 20px !important;
+  color: var(--blue);
+  padding-right: 20px !important;
 }
 
 .navbar__btn {
-    background: var(--white);
-    color: var(--blue);
-    border: 1px solid var(--blue);
-    outline: none;
-
-    padding: 12px 15px;
-    border-radius: 50px;
-    font-weight: 500;
-    transition: all ease-in 0.3s;
+  background: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  outline: none;
+  padding: 12px 15px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all ease-in 0.3s;
 }
 
 .navbar__btn:hover {
-    background: var(--blue);
-    color: var(--white);
-    border: 1px solid transparent;
+  background: var(--blue);
+  color: var(--white);
+  border: 1px solid transparent;
 }
 
 /* =========== Navbar css =========== */
 /* =========== headins css S=========== */
 
 #headingPart {
-    overflow: hidden;
-    height: 950px;
+  overflow: hidden;
+  height: 950px;
 }
 
 .heading__title {
-    color: var(--primary_font);
-    font-size: 58px;
-    font-weight: 900;
-    letter-spacing: -1.5%;
-    position: relative;
+  color: var(--primary_font);
+  font-size: 58px;
+  font-weight: 900;
+  letter-spacing: -1.5%;
+  position: relative;
 }
 
 .heading__title::before {
-    position: absolute;
-    content: "";
-    width: 120px;
-    height: 4px;
-    background: var(--blue);
-    top: -22px;
-    left: 0px;
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 4px;
+  background: var(--blue);
+  top: -22px;
+  left: 0px;
 }
 
 .heading__title span {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 .heading__summary {
-    color: #000000;
-    font-family: var(--dmSans);
-    font-size: 20px;
-    font-weight: 400;
-    padding: 30px 0 50px;
+  color: #000000;
+  font-family: var(--dmSans);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 30px 0 50px;
 }
 
 .commonBtn {
-    outline: 0;
-    border: 0;
-    border-radius: 50px;
-    transition: all ease-in-out 0.3s;
+  outline: 0;
+  border: 0;
+  border-radius: 50px;
+  transition: all ease-in-out 0.3s;
 }
 
 .headingBtn {
-    padding: 15px 25px;
-    color: var(--primary_bg);
-    background: var(--white);
-    font-size: 20px;
-    font-weight: 700px;
-    border: 1px solid #d5d4de;
+  padding: 15px 25px;
+  color: var(--primary_bg);
+  background: var(--white);
+  font-size: 20px;
+  font-weight: 700px;
+  border: 1px solid #d5d4de;
 }
 
 .headingBtn:hover {
-    color: var(--white);
-    background: var(--primary_bg);
-    box-shadow: 0px 46px 53px 0px rgba(96, 225, 203, 0.56);
-    border: 1px solid transparent;
+  color: var(--white);
+  background: var(--primary_bg);
+  box-shadow: 0px 46px 53px 0px rgba(96, 225, 203, 0.56);
+  border: 1px solid transparent;
 }
 
 .heading__right {
-    position: relative;
+  position: relative;
 }
 
 .banner__img {
-    z-index: 5;
+  z-index: 5;
 }
 
 .banner__circle {
-    position: absolute;
-    z-index: -1;
-    top: 177px;
-    right: -274px;
-    animation: rotate 15s ease-in-out infinite;
+  position: absolute;
+  z-index: -1;
+  top: 177px;
+  right: -274px;
+  animation: rotate 15s ease-in-out infinite;
 }
 
 .heading__circle2 {
-    position: absolute;
-    z-index: -1;
-    top: 262px;
-    left: -269px;
-    animation: rotate 20s ease-in-out infinite;
+  position: absolute;
+  z-index: -1;
+  top: 262px;
+  left: -269px;
+  animation: rotate 20s ease-in-out infinite;
 }
 
 /* =========== headins css =========== */
 /* =========== Services css S=========== */
 
 #ServicePart {
-    background: var(--secondary_bg);
-    padding: 120px 0 180px;
+  background: var(--secondary_bg);
+  padding: 120px 0 180px;
 }
 
 .servicePart__title {
-    color: var(--primary_font);
-    font-size: 48px;
-    font-weight: 700;
+  color: var(--primary_font);
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .servicePart__summary {
-    font-family: var(--dmSans);
-    color: var(--secondary_font);
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 60px;
+  font-family: var(--dmSans);
+  color: var(--secondary_font);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 60px;
 }
 
 .serviceCard {
-    background: var(--white);
-    padding: 96px 80px 32px 42px;
-    border-top: 15px solid var(--primary_bg);
+  background: var(--white);
+  padding: 96px 80px 32px 42px;
+  border-top: 15px solid var(--primary_bg);
 }
 
 .serviceCard__img {
-    margin-bottom: 36px;
+  margin-bottom: 36px;
 }
 
 .serviceCard__title {
-    color: var(--primary_font);
-    font-weight: 700;
-    font-size: 20px;
-
+  color: var(--primary_font);
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .serviceCard__details {
-    color: var(--secondary_font);
-    font-family: var(--dmSans);
-    font-weight: 500;
-    font-size: 16px;
-    margin: 16px 0 32px;
+  color: var(--secondary_font);
+  font-family: var(--dmSans);
+  font-weight: 500;
+  font-size: 16px;
+  margin: 16px 0 32px;
 }
 
 .serviceCard__link {
-    color: var(--blue);
-    font-family: var(--dmSans);
-    font-weight: 700;
-    font-size: 14px;
+  color: var(--blue);
+  font-family: var(--dmSans);
+  font-weight: 700;
+  font-size: 14px;
 }
 
 /* =========== Services css =========== */
 /* =========== Portfolio css S =========== */
 #PortfolioPart {
-    margin: 80px 0;
-    position: relative;
-
+  margin: 80px 0 0;
+  position: relative;
 }
 
 .PortfolioPart__tTItile {
-    font-weight: 700;
-    font-size: 24px;
-    color: var(--blue);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--blue);
 }
 
 .PortfolioPart__tSummary {
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--primary_font);
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--primary_font);
 }
 
 .Portfolio__btn {
-    color: var(--blue);
-    outline: none;
-    font-weight: 400;
-    font-size: 20px;
-    background: transparent;
-    padding: 20px 40px;
-    border-radius: 55px;
-    border: 3px solid transparent;
+  color: var(--blue);
+  outline: none;
+  font-weight: 400;
+  font-size: 20px;
+  background: transparent;
+  padding: 20px 40px;
+  border-radius: 55px;
+  border: 3px solid transparent;
 }
 
 .Portfolio__btn:hover {
-    border-radius: 55px;
-    border: 3px solid var(--blue);
+  border-radius: 55px;
+  border: 3px solid var(--blue);
 }
 
 .Portfolio__slide {
-    position: absolute;
-    width: 1486px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  width: 1486px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .slide__details {
-    font-size: 18px;
-    color: var(--secondary_font);
-    font-weight: 300;
-    padding-top: 32px;
+  font-size: 18px;
+  color: var(--secondary_font);
+  font-weight: 300;
+  padding-top: 32px;
 }
 
 .Portfolio__slide::after {
-    content: url("../images/circle3.png");
-    position: absolute;
-    z-index: -2;
-    top: -146px;
-    left: -200px;
-    animation: rotate 10s ease-in-out infinite;
+  content: url("../images/circle3.png");
+  position: absolute;
+  z-index: -2;
+  top: -146px;
+  left: -200px;
+  animation: rotate 10s ease-in-out infinite;
 }
 
 .Portfolio__overlay {
-    width: 100%;
-    height: 423px;
-    background: var(--primary_bg);
-    margin-top: 230px;
+  width: 100%;
+  height: 423px;
+  background: var(--primary_bg);
+  margin-top: 230px;
 }
-
-
-.Portfolio__overlay::after {
-    content: url("../images/circle3.png");
-    position: absolute;
-    z-index: -1;
-    bottom: -20%;
-    left: -10%;
-    animation: rotate 10s ease-in-out infinite;
-}
-
-.Portfolio__overlay::before {
-    content: url("../images/circle4.png");
-    position: absolute;
-    z-index: -1;
-    border-radius: 50%;
-    bottom: -40%;
-    right: 5.2%;
-    animation: rotate 15s ease-in-out infinite;
-}
-
 
 .PortfolioOverlay__btn {
-    background: var(--primary_font);
-    color: var(--white);
-    padding: 22px 60px;
-    border: none;
-    outline: none;
-    border-radius: 50px;
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0px 46px 53px 0px rgba(96, 225, 203, 0.56);
+  background: var(--primary_font);
+  color: var(--white);
+  padding: 22px 60px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+  box-shadow: 0px 46px 53px 0px rgba(96, 225, 203, 0.56);
 }
-
-
-/* .Portfolio__slide {
-    z-index: 5;
-    position: relative;
-}
-
-.Portfolio__slide::after {
-    content: url("../images/circle3.png");
-    position: absolute;
-    z-index: -2;
-    top: -146px;
-    left: -200px;
-    animation: rotate 15s ease-in-out infinite;
-}
-
-.Portfolio__overlay {
-    position: relative;
-    width: 100%;
-}
-
-.Portfolio__overlay::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 300px;
-    z-index: -1;
-    background: var(--primary_bg);
-    bottom: -133px;
-    left: 0px;
-}
-
- */
-
-
 
 /* =========== Portfolio css =========== */
 /* =========== Idea css S=========== */
 
-
 #ideaPart {
-    padding: 160px 0 220px;
-    position: relative;
+  padding: 240px 0 220px;
+  position: relative;
+  overflow: hidden;
 }
 
 .idea__title {
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--primary_font);
-
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--primary_font);
 }
 
 .idea__title span {
-    color: var(--primary_bg);
-
+  color: var(--primary_bg);
 }
 
 .idea__details {
-    font-family: var(--dmSans);
-    font-size: 20px;
-    font-weight: 500;
-    padding: 16px 0 0;
+  font-family: var(--dmSans);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 16px 0 0;
 }
-
-.ideaList__series {
-    background: var(--white);
-    font-weight: 700;
-    font-size: 32px;
-    color: var(--blue);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 0 32px 41px rgb(0, 0, 0, .13);
+.idea__list {
+  position: relative;
+  z-index: 1;
 }
-
+.idea__list::after{
+  position: absolute;
+  content: url(../images/line.png);
+  top: 0%;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+.idea__count {
+  background: var(--white);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--blue);
+  width: 82px;
+  height: 82px;
+  margin-bottom: 75px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 51px 85px 7px rgba(0, 0, 0, 0.1);
+}
+.ideaCount__number {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--blue);
+  line-height: 82px;
+}
 .ideaList__title {
-    padding-top: 26px;
-    font-size: 24px;
-    color: var(--primary_bg);
-    font-weight: 500;
+  padding-top: 28px;
+  font-size: 24px;
+  color: var(--primary_bg);
+  font-weight: 500;
 }
 
 .ideaList__details {
-    font-family: var(--dmSans);
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--secondary_font);
+  font-family: var(--dmSans);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--secondary_font);
 }
 
 .ideaPart__pic {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 .ideaPart__pic::after {
-    content: url(../images/circle5.png);
-    position: absolute;
-    z-index: -1;
-    top: 15%;
-    left: 20%;
-    transform: translateY(-50%);
-    animation: rotate 15s ease-in-out infinite;
+  content: url(../images/circle5.png);
+  position: absolute;
+  z-index: -1;
+  top: 15%;
+  left: 20%;
+  transform: translateY(-50%);
+  animation: rotate 15s ease-in-out infinite;
+}
+.ideaPart__pic::before {
+  content: url("../images/circle4.png");
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: -70%;
+  right: 1%;
+  animation: rotate 15s ease-in-out infinite;
+}
+#ideaPart::after {
+  content: url("../images/circle3.png");
+  position: absolute;
+  z-index: -1;
+  top: -20%;
+  left: -10%;
+  animation: rotate 10s ease-in-out infinite;
 }
 
 #ideaPart::before {
-    content: url(../images/circle6.png);
-    position: absolute;
-    z-index: -1;
-    bottom: -20%;
-    left: 0%;
-    transform: translateY(-50%);
-    animation: rotate 25s ease-in-out infinite;
+  content: url(../images/circle6.png);
+  position: absolute;
+  z-index: -1;
+  bottom: -20%;
+  left: 0%;
+  transform: translateY(-50%);
+  animation: rotate 25s ease-in-out infinite;
 }
-
 
 /* =========== Idea css =========== */
 /* =========== workUs css S =========== */
 
 #WorkUsPart {
-    padding: 162px 0;
-    background: var(--primary_bg);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+  padding: 162px 0;
+  background: var(--primary_bg);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .WorkUsPart__title {
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--secondary_font);
-
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--secondary_font);
 }
 
 .WorkUsPart__detail {
-    font-weight: 500;
-    font-family: var(--dmSans);
-    font-size: 24px;
-    color: var(--secondary_font);
-    line-height: 102.2%;
-    padding: 27px 0 60px;
-
+  font-weight: 500;
+  font-family: var(--dmSans);
+  font-size: 24px;
+  color: var(--secondary_font);
+  line-height: 102.2%;
+  padding: 27px 0 60px;
 }
 
 .WorkUsPart__btn {
-    font-family: var(--popins);
-    font-weight: 500;
-    font-size: 22px;
-    padding: 26px 70px;
-    color: var(--white);
-    background: var(--primary_font);
+  font-family: var(--popins);
+  font-weight: 500;
+  font-size: 22px;
+  padding: 26px 70px;
+  color: var(--white);
+  background: var(--primary_font);
 }
 
 #WorkUsPart::after {
-    content: url(../images/workUsMask.png);
-    position: absolute;
-    z-index: -1;
-    top: 0px;
-    left: 0px;
+  content: url(../images/workUsMask.png);
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
 }
 
 /* =========== workUs css =========== */
 /* =========== Testimonial css S =========== */
 
 #testimonialPart {
-    padding: 170px 0 250px;
-    position: relative;
+  padding: 170px 0 250px;
+  position: relative;
 }
 
 .testimonial__slide {
-    max-width: 1000px;
-    background: var(--white);
-    padding: 67px;
+  max-width: 1000px;
+  background: var(--white);
+  padding: 67px;
 }
-.testimonialSlide__point{
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--secondary_font);
+.testimonialSlide__point {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--secondary_font);
 }
-.testimonialSlide__comments{
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--primary_font);
+.testimonialSlide__comments {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--primary_font);
 }
 
-.profileImg1{
-    position: absolute;
-    bottom: -180px;
-    left: 100%;
-    transform: translateX(-50%);
-
+.profileImg1 {
+  position: absolute;
+  bottom: -180px;
+  left: 100%;
+  transform: translateX(-50%);
 }
-.profileImg2{
-    position: absolute;
-    bottom: -180px;
-    left: 75%;
-    transform: translateX(-50%);
+.profileImg2 {
+  position: absolute;
+  bottom: -180px;
+  left: 75%;
+  transform: translateX(-50%);
 }
-.profileImg3{
-    position: absolute;
-    bottom: -180px;
-    left: 125%;
-    transform: translateX(-50%);
+.profileImg3 {
+  position: absolute;
+  bottom: -180px;
+  left: 125%;
+  transform: translateX(-50%);
 }
-.clientName{
-    font-weight: 700;
-    font-size: 22px;
-    color: var(--primary_font);
+.clientName {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--primary_font);
 }
-.clientStatus{
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--primary_bg);
+.clientStatus {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primary_bg);
 }
 
 /* =========== Testimonial css =========== */
+/* =========== Footer css S=========== */
+
+#footerPart{
+  padding: 110px 0;
+  background: var(--primary_bg);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#footerPart::after {
+  content: url(../images/workUsMask.png);
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+}
+.footer__option{
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.footer__option:focus{
+  box-shadow: none;
+  border: none;
+}
+/* =========== Footer css =========== */
