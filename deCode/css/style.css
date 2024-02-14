@@ -263,3 +263,102 @@ body {
   background: #000;
 }
 /* =========== workPart css =========== */
+
+/* =========== realaityPart css =========== */
+#realaityPart {
+  padding: 202px 0 207px;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+#realaityPart::after {
+  position: absolute;
+  content: url("../images/circle1.png");
+  top: -76px;
+  left: -114px;
+  transform: rotate(157deg);
+}
+
+#realaityPart::before {
+  position: absolute;
+  content: url("../images/circle3.png");
+  top: -151px;
+  right: 0px;
+  transform: rotate(25deg);
+}
+
+.realaityPart2 {
+  position: relative;
+}
+
+.allCount {
+  display: flex;
+  flex-direction: column;
+  row-gap: 75px;
+  position: relative;
+  z-index: 1;
+}
+
+.allCount::after {
+  position: absolute;
+  content: url("../images/line.png");
+  top: 0;
+  left: 41%;
+  z-index: -1;
+}
+
+.allCount::before {
+  position: absolute;
+  content: url("../images/circle3.png");
+  bottom: -28rem;
+  left: -30rem;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.itemCount {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+}
+
+.knowledge {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin-top: 24px;
+}
+
+.realityRight {
+  bottom: -10%;
+  right: -10%;
+  z-index: 1;
+}
+
+.realityRightimg {
+  width: 95%;
+  max-width: fit-content;
+  height: 85%;
+}
+
+.realityRight::after {
+  position: absolute;
+  content: url("../images/circle3.png");
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* =========== realaityPart css =========== */
