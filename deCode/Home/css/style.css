@@ -353,7 +353,7 @@ body {
   position: relative;
   z-index: 1;
 }
-.idea__list::after{
+.idea__list::after {
   position: absolute;
   content: url(../images/line.png);
   top: 0%;
@@ -533,7 +533,7 @@ body {
 /* =========== Testimonial css =========== */
 /* =========== Footer css S=========== */
 
-#footerPart{
+#footerPart {
   padding: 110px 0;
   background: var(--primary_bg);
   position: relative;
@@ -548,13 +548,60 @@ body {
   top: 0px;
   left: 0px;
 }
-.footer__option{
+.footerLeft1__title {
+  /* font: normal 800 32px; */
+  font-weight: 900;
+  font-size: 2rem;
+}
+.footerLeft1__details {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.footerList__title {
+  font-weight: 800;
+  font-size: 19px;
+  margin-bottom: .6rem;
+}
+.footerList__item{
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--primary_font);
+  opacity: 0.4;
+  transition: all ease-in-out .3s;
+  margin-top: .4rem;
+}
+.footerList__item:hover{
+  color: var(--primary_font);
+  opacity: 1;
+
+}
+
+.footer__option {
   background: transparent;
   outline: none;
   border: none;
 }
-.footer__option:focus{
+.footer__option:focus {
   box-shadow: none;
   border: none;
+}
+.footer__line{
+  margin: 50px 0;
+  max-width: 1420px;
+  height: 0.9px;
+  opacity: 1;
+  color: var(--white);
+}
+.footerEnd__credit{
+  color: var(--primary_font);
+  font-family: var(--popins);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.footerEnd__dontKnow{
+  color: var(--primary_font);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 0.8rem;
 }
 /* =========== Footer css =========== */
