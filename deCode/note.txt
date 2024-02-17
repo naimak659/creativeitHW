@@ -8,3 +8,6 @@ bold 700
 semi bold 600
 extra bold 800
 black 900
+
+font: [font-style] [font-variant] [font-weight] [font-size/line-height] [font-family];
+font: italic capital

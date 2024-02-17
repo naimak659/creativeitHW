@@ -454,11 +454,8 @@ body {
 }
 
 .WorkUsPart__detail {
-  font-weight: 500;
-  font-family: var(--dmSans);
-  font-size: 24px;
+  font: 500 24px/102.2% var(--dmSans);
   color: var(--secondary_font);
-  line-height: 102.2%;
   padding: 27px 0 60px;
 }
 
@@ -522,8 +519,9 @@ body {
   transform: translateX(-50%);
 }
 .clientName {
-  font-weight: 700;
-  font-size: 22px;
+  /* font-weight: 700;
+  font-size: 22px; */
+  font: 700 22px/100%;
   color: var(--primary_font);
 }
 .clientStatus {
