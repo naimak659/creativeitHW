@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* =========== Common css S=========== */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+div,
+span,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: circularStd;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: circularStd;
+  src: url(../fontA/circular-std-medium-500.ttf);
+}
+
+/* =========== Common css =========== */
+
+/* =========== animation css S=========== */
+@keyframes rotate {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========== animation css =========== */
+
+/* =========== Root css S =========== */
+:root {
+  --dmSans: "DM Sans", sans-serif;
+  --white: #fff;
+  --primary_bg: #60e1cb;
+  --secondary_bg: #e9fbf8;
+  --primary_font: #292525;
+  --secondary_font: #000000;
+  --blue: #7bc0e3;
+  --popins: "Poppins", sans-serif;
+}
+
+/* =========== Root css =========== */
+/* =========== Navbar css S=========== */
+
+.navbarList__item {
+  color: var(--blue);
+  padding-right: 20px !important;
+}
+
+.navbar__btn {
+  background: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  outline: none;
+  padding: 12px 15px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all ease-in 0.3s;
+}
+
+.navbar__btn:hover {
+  background: var(--blue);
+  color: var(--white);
+  border: 1px solid transparent;
+}
+
+/* =========== Navbar css =========== */
+
+
+
+
+
+
+
+
+
+/* =========== Footer css S=========== */
+
+#footerPart {
+    padding: 110px 0;
+    background: var(--primary_bg);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  #footerPart::after {
+    content: url(../images/workUsMask.png);
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+  }
+  .footerLeft1__title {
+    /* font: normal 800 32px; */
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  .footerLeft1__details {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .footerList__title {
+    font-weight: 800;
+    font-size: 19px;
+    margin-bottom: .6rem;
+  }
+  .footerList__item{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--primary_font);
+    opacity: 0.4;
+    transition: all ease-in-out .3s;
+    margin-top: .4rem;
+  }
+  .footerList__item:hover{
+    color: var(--primary_font);
+    opacity: 1;
+  
+  }
+  
+  .footer__option {
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  .footer__option:focus {
+    box-shadow: none;
+    border: none;
+  }
+  .footer__line{
+    margin: 50px 0;
+    max-width: 1420px;
+    height: 0.9px;
+    opacity: 1;
+    color: var(--white);
+  }
+  .footerEnd__credit{
+    color: var(--primary_font);
+    font-family: var(--popins);
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .footerEnd__dontKnow{
+    color: var(--primary_font);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0 0.8rem;
+  }
+  /* =========== Footer css =========== */
