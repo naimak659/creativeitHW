@@ -106,86 +106,240 @@ body {
 }
 
 /* =========== Navbar css =========== */
+/* =========== hERO css s=========== */
 
+#HeroPart {
+  height: 74vh;
+  position: relative;
+  overflow: hidden;
+  background: var(--primary_bg) url("../images/Mask\ Group.png") no-repeat
+    center/cover;
+}
 
+.hero__title {
+  font-weight: 900;
+  font-size: 3.62rem;
+}
+.hero__details {
+  font-family: var(--dmSans);
+  font-weight: 500;
+  font-size: 1.25rem;
+  max-width: 819px;
+}
 
+/* =========== hERO css =========== */
+/* =========== Services css S=========== */
 
+#sectionPart {
+  height: 129vh;
+  position: relative;
+}
+.service--bg {
+  background: var(--secondary_bg);
+  padding: 6.1vh 15vh;
+  max-width: 91vw;
+  border-radius: 40px;
+  margin: -4.323vw auto;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.servicePart__title {
+  color: var(--primary_font);
+  font-size: 48px;
+  font-weight: 700;
+}
 
+.servicePart__summary {
+  font-family: var(--dmSans);
+  color: var(--secondary_font);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(359px, 1fr));
+  gap: 50px;
+}
+.card {
+  background: var(--white);
+  border: none;
+  outline: none;
+  border-radius: 0.6vw;
+  padding: 4.2vw 2.448vw 2.18vw 1.667vw;
+  -webkit-border-radius: 0.6vw;
+  -moz-border-radius: 0.6vw;
+  -ms-border-radius: 0.6vw;
+  -o-border-radius: 0.6vw;
+}
+.serviceCard__img {
+  margin-bottom: 36px;
+}
 
+.serviceCard__title {
+  color: var(--primary_font);
+  font-weight: 700;
+  font-size: 20px;
+}
 
+.serviceCard__details {
+  color: var(--secondary_font);
+  font-family: var(--dmSans);
+  font-weight: 500;
+  font-size: 16px;
+  margin: 16px 0 32px;
+}
 
+.serviceCard__link {
+  color: var(--blue);
+  font-family: var(--dmSans);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* =========== Services css =========== */
+/* =========== workUs css S =========== */
+
+#WorkUsPart {
+  padding: 162px 0;
+  background: var(--primary_bg);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.WorkUsPart__title {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--secondary_font);
+}
+
+.WorkUsPart__detail {
+  font: 500 24px/102.2% var(--dmSans);
+  color: var(--secondary_font);
+  padding: 27px 0 60px;
+}
+.commonBtn {
+  outline: 0;
+  border: 0;
+  border-radius: 50px;
+  transition: all ease-in-out 0.3s;
+}
+.WorkUsPart__btn {
+  font-family: var(--popins);
+  font-weight: 500;
+  font-size: 22px;
+  padding: 26px 70px;
+  color: var(--white);
+  background: var(--primary_font);
+}
+
+#WorkUsPart::after {
+  content: url(../images/workUsMask.png);
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+}
+
+/* =========== workUs css =========== */
+/* =========== session  css S=========== */
+
+#sessionPart {
+  padding: 180px 0;
+  background: var(--secondary_bg);
+}
+.sessionR__title {
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--primary_font);
+}
+.sessionR__details {
+  font-family: var(--dmSans);
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--primary_font);
+  opacity: 0.7;
+}
+.sessionL__title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: var(--primary_bg);
+}
+/* =========== session  css =========== */
 
 /* =========== Footer css S=========== */
 
 #footerPart {
-    padding: 110px 0;
-    background: var(--primary_bg);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
-  
-  #footerPart::after {
-    content: url(../images/workUsMask.png);
-    position: absolute;
-    z-index: -1;
-    top: 0px;
-    left: 0px;
-  }
-  .footerLeft1__title {
-    /* font: normal 800 32px; */
-    font-weight: 900;
-    font-size: 2rem;
-  }
-  .footerLeft1__details {
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  .footerList__title {
-    font-weight: 800;
-    font-size: 19px;
-    margin-bottom: .6rem;
-  }
-  .footerList__item{
-    font-weight: 500;
-    font-size: 1rem;
-    color: var(--primary_font);
-    opacity: 0.4;
-    transition: all ease-in-out .3s;
-    margin-top: .4rem;
-  }
-  .footerList__item:hover{
-    color: var(--primary_font);
-    opacity: 1;
-  
-  }
-  
-  .footer__option {
-    background: transparent;
-    outline: none;
-    border: none;
-  }
-  .footer__option:focus {
-    box-shadow: none;
-    border: none;
-  }
-  .footer__line{
-    margin: 50px 0;
-    max-width: 1420px;
-    height: 0.9px;
-    opacity: 1;
-    color: var(--white);
-  }
-  .footerEnd__credit{
-    color: var(--primary_font);
-    font-family: var(--popins);
-    font-weight: 400;
-    font-size: 1rem;
-  }
-  .footerEnd__dontKnow{
-    color: var(--primary_font);
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin: 0 0.8rem;
-  }
-  /* =========== Footer css =========== */
+  padding: 110px 0;
+  background: var(--primary_bg);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#footerPart::after {
+  content: url(../images/workUsMask.png);
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+}
+.footerLeft1__title {
+  /* font: normal 800 32px; */
+  font-weight: 900;
+  font-size: 2rem;
+}
+.footerLeft1__details {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.footerList__title {
+  font-weight: 800;
+  font-size: 19px;
+  margin-bottom: 0.6rem;
+}
+.footerList__item {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--primary_font);
+  opacity: 0.4;
+  transition: all ease-in-out 0.3s;
+  margin-top: 0.4rem;
+}
+.footerList__item:hover {
+  color: var(--primary_font);
+  opacity: 1;
+}
+
+.footer__option {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.footer__option:focus {
+  box-shadow: none;
+  border: none;
+}
+.footer__line {
+  margin: 50px 0;
+  max-width: 1420px;
+  height: 0.9px;
+  opacity: 1;
+  color: var(--white);
+}
+.footerEnd__credit {
+  color: var(--primary_font);
+  font-family: var(--popins);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.footerEnd__dontKnow {
+  color: var(--primary_font);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 0.8rem;
+}
+/* =========== Footer css =========== */
