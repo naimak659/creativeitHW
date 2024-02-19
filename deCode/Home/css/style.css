@@ -49,7 +49,7 @@ body {
 
 @font-face {
   font-family: circularStd;
-  src: url(../fontA/circular-std-medium-500.ttf);
+  src: url(/fontA/circular-std-medium-500.ttf);
 }
 
 /* =========== Common css =========== */
@@ -294,7 +294,7 @@ body {
 }
 
 .Portfolio__slide::after {
-  content: url("../images/circle3.png");
+  content: url("/images/circle3.png");
   position: absolute;
   z-index: -2;
   top: -146px;
@@ -355,7 +355,7 @@ body {
 }
 .idea__list::after {
   position: absolute;
-  content: url(../images/line.png);
+  content: url(/images/line.png);
   top: 0%;
   left: 50%;
   z-index: -1;
@@ -400,7 +400,7 @@ body {
 }
 
 .ideaPart__pic::after {
-  content: url(../images/circle5.png);
+  content: url(/images/circle5.png);
   position: absolute;
   z-index: -1;
   top: 15%;
@@ -409,7 +409,7 @@ body {
   animation: rotate 15s ease-in-out infinite;
 }
 .ideaPart__pic::before {
-  content: url("../images/circle4.png");
+  content: url("/images/circle4.png");
   position: absolute;
   z-index: -1;
   border-radius: 50%;
@@ -418,7 +418,7 @@ body {
   animation: rotate 15s ease-in-out infinite;
 }
 #ideaPart::after {
-  content: url("../images/circle3.png");
+  content: url("/images/circle3.png");
   position: absolute;
   z-index: -1;
   top: -20%;
@@ -427,7 +427,7 @@ body {
 }
 
 #ideaPart::before {
-  content: url(../images/circle6.png);
+  content: url(/images/circle6.png);
   position: absolute;
   z-index: -1;
   bottom: -20%;
@@ -469,7 +469,7 @@ body {
 }
 
 #WorkUsPart::after {
-  content: url(../images/workUsMask.png);
+  content: url(/images/workUsMask.png);
   position: absolute;
   z-index: -1;
   top: 0px;
@@ -542,7 +542,7 @@ body {
 }
 
 #footerPart::after {
-  content: url(../images/workUsMask.png);
+  content: url(/images/workUsMask.png);
   position: absolute;
   z-index: -1;
   top: 0px;

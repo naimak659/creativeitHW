@@ -112,7 +112,7 @@ body {
   height: 74vh;
   position: relative;
   overflow: hidden;
-  background: var(--primary_bg) url("/images/Mask\ Group.png") no-repeat
+  background: var(--primary_bg) url("/images/workUsMask.png") no-repeat
     center/cover;
 }
 
@@ -129,143 +129,56 @@ body {
 }
 
 /* =========== hERO css =========== */
-/* =========== Services css S=========== */
-
-#sectionPart {
-  height: 129vh;
-  position: relative;
-}
-.service--bg {
+/* =========== Team css S=========== */
+#teamPart{
+  padding: 115px 0;
   background: var(--secondary_bg);
-  padding: 6.1vh 15vh;
-  max-width: 91vw;
-  border-radius: 40px;
-  margin: -4.323vw auto;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
 }
-.servicePart__title {
-  color: var(--primary_font);
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.servicePart__summary {
-  font-family: var(--dmSans);
-  color: var(--secondary_font);
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 60px;
-}
-.cards {
+.teamCards{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(359px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(4, 325px);
+  column-gap: 25px;
+  row-gap: 60px;
+  justify-content: center;
 }
-.card {
+.TeamCard{
   background: var(--white);
-  border: none;
+  padding: 40px 79px 32px;
+  border-radius: 0.75rem;
+  display: grid;
+  place-items: center;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+}
+.TeamName{
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1.6rem;
+  
+}
+.TeamProffesion{
+  font-family: var(--dmSans);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 163.2%;
+}
+.TeamBtn{
+  font-family: var(--dmSans);
+  font-weight: 700;
+  font-size: 1rem;
   outline: none;
-  border-radius: 0.6vw;
-  padding: 4.2vw 2.448vw 2.18vw 1.667vw;
-}
-.serviceCard__img {
-  margin-bottom: 36px;
-}
-
-.serviceCard__title {
-  color: var(--primary_font);
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.serviceCard__details {
-  color: var(--secondary_font);
-  font-family: var(--dmSans);
-  font-weight: 500;
-  font-size: 16px;
-  margin: 16px 0 32px;
-}
-
-.serviceCard__link {
-  color: var(--blue);
-  font-family: var(--dmSans);
-  font-weight: 700;
-  font-size: 14px;
-}
-
-/* =========== Services css =========== */
-/* =========== workUs css S =========== */
-
-#WorkUsPart {
-  padding: 162px 0;
+  border: none;
   background: var(--primary_bg);
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
+  border-radius: 60px;
+  padding: 10px 17px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
 }
-
-.WorkUsPart__title {
-  font-weight: 700;
-  font-size: 48px;
-  color: var(--secondary_font);
-}
-
-.WorkUsPart__detail {
-  font: 500 24px/102.2% var(--dmSans);
-  color: var(--secondary_font);
-  padding: 27px 0 60px;
-}
-.commonBtn {
-  outline: 0;
-  border: 0;
-  border-radius: 50px;
-  transition: all ease-in-out 0.3s;
-}
-.WorkUsPart__btn {
-  font-family: var(--popins);
-  font-weight: 500;
-  font-size: 22px;
-  padding: 26px 70px;
-  color: var(--white);
-  background: var(--primary_font);
-}
-
-#WorkUsPart::after {
-  content: url(/images/workUsMask.png);
-  position: absolute;
-  z-index: -1;
-  top: 0px;
-  left: 0px;
-}
-
-/* =========== workUs css =========== */
-/* =========== session  css S=========== */
-
-#sessionPart {
-  padding: 180px 0;
-  background: var(--secondary_bg);
-}
-.sessionR__title {
-  font-weight: 700;
-  font-size: 3rem;
-  color: var(--primary_font);
-}
-.sessionR__details {
-  font-family: var(--dmSans);
-  font-weight: 400;
-  font-size: 1.2rem;
-  color: var(--primary_font);
-  opacity: 0.7;
-}
-.sessionL__title {
-  font-weight: 700;
-  font-size: 2.2rem;
-  color: var(--primary_bg);
-}
-/* =========== session  css =========== */
+/* =========== Team css =========== */
 
 /* =========== Footer css S=========== */
 
